@@ -32,6 +32,11 @@ type        : repo
 description : Unstable - Awesome Developer Repo
 prefix      : woju/qubes-
 
+[repo-2]
+type        : repo
+description : Unstable - Developer Repo
+prefix      : fepitre/qubes-
+
 [builder-fedora]
 id          : builder-fedora
 type        : builder
