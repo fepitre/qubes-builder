@@ -45,6 +45,11 @@ type        : builder
 description : CentOS Builder - Contains all Makefiles to build CentOS based templates
 require     : None
 require_in  : centos
+key         : C7A3BA7D2DDAF042C77CA4D21DABC232BE02201E 
+owner       : Frédéric Pierret (fepitre) <frederic.epitre@orange.fr> 
+fingerprint : C7A3 BA7D 2DDA F042 C77C  A4D2 1DAB C232 BE02 201E
+verify      : fpr:::::::::C7A3BA7D2DDAF042C77CA4D21DABC232BE02201E:
+url         : https://raw.githubusercontent.com/fepitre/keys/master/frederic-pierret-signing-key.asc 
 
 [builder-debian]
 id          : builder-debian
