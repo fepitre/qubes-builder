@@ -764,6 +764,27 @@ post-update-repo-%:
 		(cd $$repo/.. && ./update_repo-$*.sh `basename $$repo`); \
 	done
 
+# templates-update-repo-* targets only set TEMPLATES_REPO destination and call
+# internal-templates-update-repo-* targets for the actual work and call
+# post-templates-update-repo-* targets for updating and syncing
+templates-update-repo-%: TEMPLATES_REPO = $(subst templates-update-repo-, ,$*)
+templates-update-repo-%: internal-templates-update-repo-% post-templates-update-repo-%
+	@true
+
+internal-templates-update-repo-%:
+	@for DIST in $(DISTS_VM); do \
+                if ! DIST=$$DIST UPDATE_REPO=$(BUILDER_DIR)/$(LINUX_REPO_BASEDIR)/templates-$(TEMPLATES_REPO) \
+                        $(MAKE) -s -C $(SRC_DIR)/linux-template-builder templates-update-repo-$(TEMPLATES_REPO) ; then \
+                                echo "make templates-update-repo-$(repo) failed for template dist=$$DIST"; \
+                                exit 1; \
+                fi; \
+        done
+
+# this is executed only once for all template-update-repo-* target
+post-templates-update-repo-%:
+	@repo_basedir="$(LINUX_REPO_BASEDIR)"; \
+	cd $$repo_basedir/.. && ./update_repo-template.sh `basename $$repo_basedir`;
+
 check-release-status: $(DISTS_VM_NO_FLAVOR:%=check-release-status-vm-%)
 
 ifneq (,$(DIST_DOM0))
