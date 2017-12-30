@@ -23,6 +23,10 @@ if [ -n "$KEYRING_DIR_GIT" ]; then
         gpg --import qubes-developers-keys.asc
         # Trust Qubes Master Signing Key
         echo '427F11FD0FAA4B080123F01CDDFA1A3E36879494:6:' | gpg --import-ownertrust
+        
+	gpg --import frederic-pierret-signing-key.asc
+	# Trust Frédéric Pierret Signing Key
+	echo 'C7A3BA7D2DDAF042C77CA4D21DABC232BE02201E:6:' | gpg --import-ownertrust
     fi
     if [ qubes-developers-keys.asc -nt "$GNUPGHOME/pubring.gpg" ]; then
         gpg --import qubes-developers-keys.asc
