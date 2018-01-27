@@ -1,0 +1,29 @@
+#!/bin/bash
+
+export ARCHIVE_SRC="$(readlink -f "$1")"
+export ARCHIVE_NAME="$(basename "$2" .tar.gz)"
+export ARCHIVE_PREFIX="$3"
+
+# Create main repository archive
+git -C "${ARCHIVE_SRC}" archive \
+    -o "${ARCHIVE_SRC}/${ARCHIVE_NAME}.tar" \
+    --format 'tar' \
+    --prefix "${ARCHIVE_PREFIX}/" \
+    HEAD
+
+# Create submodule archives
+if [ -e "${ARCHIVE_SRC}/.gitmodules" ];then
+    git -C "${ARCHIVE_SRC}" submodule foreach --recursive \
+        'git archive \
+        -o ${ARCHIVE_SRC}/${ARCHIVE_NAME}-submodule-$sha1.tar \
+        --format "tar" \
+        --prefix ${ARCHIVE_PREFIX}/$path/ \
+        HEAD'
+    
+    tar -A --file "${ARCHIVE_SRC}/${ARCHIVE_NAME}.tar" "${ARCHIVE_SRC}/${ARCHIVE_NAME}-submodule-"*.tar
+    
+    rm -rf "${ARCHIVE_SRC}/${ARCHIVE_NAME}-submodule-"*.tar
+fi
+
+# Create the final gzip archive
+gzip --force "${ARCHIVE_SRC}/${ARCHIVE_NAME}.tar"

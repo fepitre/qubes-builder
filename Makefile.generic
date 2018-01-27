@@ -106,7 +106,8 @@ endif
 make-git-tarball: prefix = $(subst _,-,$(subst .orig,,$(subst .tar.gz,,$(notdir $(GIT_TARBALL_NAME)))))/
 make-git-tarball:
 	mkdir -p $(CHROOT_DIR)$(DIST_SRC)
-	git -C $(CHROOT_DIR)$(DIST_SRC) archive \
+	$(BUILDER_DIR)/scripts/create-archive $(CHROOT_DIR)$(DIST_SRC) $(GIT_TARBALL_NAME) $(prefix)
+#	git -C $(CHROOT_DIR)$(DIST_SRC) archive \
 		-o $(CHROOT_DIR)$(DIST_SRC)/$(GIT_TARBALL_NAME) \
 		--prefix $(prefix) \
 		HEAD
