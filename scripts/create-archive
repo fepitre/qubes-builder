@@ -21,7 +21,7 @@ SOURCE_DATE_EPOCH=$(git log -1 --format=%ct)
 tar --sort=name \
     --mtime="@${SOURCE_DATE_EPOCH}" \
     --owner=0 --group=0 --numeric-owner \
-    --xform="s%^%${GIT_ARCHIVE_PREFIX}/%" \
+    --xform="s%^\./%${GIT_ARCHIVE_PREFIX}%" \
     --exclude pkgs --exclude .git* --exclude "${GIT_TARBALL_NAME}" \
     -cf "${GIT_TARBALL_NAME}" .
 
