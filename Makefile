@@ -239,12 +239,16 @@ $(COMPONENTS:%=sign-dom0-%): sign-dom0-% : sign-dom0-$(DIST_DOM0)-%
 endif
 
 .PHONY: $(COMPONENTS:%=sign-vm-%)
-$(COMPONENTS:%=sign-vm-%): sign-vm-% : $(addsuffix -%, $(DISTS_VM_NO_FLAVOR:%=sign-vm-%))
+$(COMPONENTS:%=sign-vm-%): sign-vm-% : $(addsuffix -%, $(DISTS_VM:%=sign-vm-%))
 
-sign-%: PACKAGE_SET = $(word 1, $(subst -, ,$*))
-sign-%: DIST        = $(word 2, $(subst -, ,$*))
-sign-%: _space      = $(_empty) $(_empty)
-sign-%: COMPONENT   = $(subst $(_space),-,$(strip $(wordlist 3, 10, $(subst -, ,$*))))
+
+sign-%: PACKAGE_SET      = $(word 1, $(subst -, ,$*))
+sign-%: dist_array       = $(subst +, ,$(word 2, $(subst -, ,$*)))
+sign-%: DIST             = $(word 1, $(dist_array))
+sign-%: TEMPLATE_FLAVOR  = $(word 2, $(dist_array))
+sign-%: TEMPLATE_OPTIONS = $(strip $(subst $(DIST),,$(subst $(TEMPLATE_FLAVOR),,$(dist_array))))
+sign-%: _space           = $(_empty) $(_empty)
+sign-%: COMPONENT        = $(subst $(_space),-,$(strip $(wordlist 3, 10, $(subst -, ,$*))))
 sign-%: $(SRC_DIR)/$(COMPONENT)
 sign-%:
 	@$(call check_branch,$(COMPONENT))
