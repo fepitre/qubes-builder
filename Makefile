@@ -347,6 +347,18 @@ template-local-%::
 		$(MAKE) -s -C $(SRC_DIR)/linux-template-builder $$MAKE_TARGET || exit 1; \
 	fi
 
+template-github:: $(DISTS_VM:%=template-github-%)
+
+template-github-%: DIST=$*
+template-github-%:
+	@if [ "$(VERBOSE)" -eq 0 ]; then \
+		echo "-> Posting build command for template $$DIST (logfile: build-logs/template-github-$$DIST.log)..."; \
+		$(BUILDER_DIR)/scripts/generate_build_github.sh $(DIST) > build-logs/template-github-$$DIST.log 2>&1 || exit 1; \
+		echo "--> Done."; \
+	else \
+		$(BUILDER_DIR)/scripts/generate_build_github.sh $(DIST) || exit 1; \
+	fi
+
 template-in-dispvm: $(DISTS_VM:%=template-in-dispvm-%)
 
 template-in-dispvm-%: DIST=$*
