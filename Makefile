@@ -694,6 +694,17 @@ do-merge-versions-only:
 		git -C $$REPO merge --ff $(GIT_MERGE_OPTS) --no-edit FETCH_HEAD || exit 1; \
 	done
 
+add-remote:
+	@if [ "x$${GIT_REMOTE//-/_}" != "x" ]; then \
+		for REPO in $(GIT_REPOS); do \
+			pushd $$REPO > /dev/null; \
+				COMPONENT=$$(basename $$REPO | sed 's/\./builder/g'); \
+				git remote add $${GIT_REMOTE//-/_} $(GIT_BASEURL)/$(GIT_PREFIX)$$COMPONENT; \
+				git fetch $${GIT_REMOTE//-/_}; \
+			popd > /dev/null; \
+		done; \
+	fi; \
+
 # update-repo-* targets only set appropriate variables and call
 # internal-update-repo-* targets for the actual work
 update-repo-%: MAKE_TARGET=update-repo
