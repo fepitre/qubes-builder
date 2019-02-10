@@ -992,6 +992,14 @@ class Config(object):
                 ]
             )
 
+            self.qubes_repos_selected = []
+
+            env['GET_VAR'] = 'USE_QUBES_REPO_VERSION'
+            self.qubes_repos_selected.append(make().strip())
+
+            env['GET_VAR'] = 'USE_QUBES_REPO_TESTING'
+            self.qubes_repos_selected.append(make().strip())
+
             self.about = sh.make(
                 '--always-make',
                 '--quiet',
@@ -1128,6 +1136,23 @@ class Config(object):
             }
         )
 
+        # QUBES_REPOSITORIES
+        if 'current' in self.qubes_repos_selected:
+            replace.add(
+                **{
+                    'replace': r'^.*USE_QUBES_REPO_VERSION[ ]+[?]?[=].*$',
+                    'text': r'{0}'.format('USE_QUBES_REPO_VERSION = $(RELEASE)'),
+                }
+            )
+
+            if 'current-testing' in self.qubes_repos_selected:
+                replace.add(
+                    **{
+                        'replace': r'^.*USE_QUBES_REPO_TESTING[ ]*[?:]?=[ ]*[\d]',
+                        'text': r'{0}'.format('USE_QUBES_REPO_TESTING = 1'),
+                    }
+                )
+
         # INCLUDE_OVERRIDE_CONF
         if os.path.exists(self.conf_override):
             override = r'INCLUDE_OVERRIDE_CONF ?= true'
@@ -1208,6 +1233,9 @@ class Wizard(Config):
 
         ## Select which templates to build (DISTS_VM)
         self.set_dists()
+
+        ## Select which Qubes packages repositories to use for partial builds
+        self.set_qubes_repos()
 
         ## Write builder.conf
         self.write_configuration()
@@ -1362,7 +1390,7 @@ class Wizard(Config):
         self.release = str(self.ui.release(**info))  # pylint: disable=W0201
 
     def set_repo(self):
-        '''Set repo prefix.
+        '''Set source repo prefix.
         '''
         choices = []
         default_set = False
@@ -1382,7 +1410,7 @@ class Wizard(Config):
         )
 
         info = {
-            'title': 'Choose Repos To Use To Build Packages',
+            'title': 'Choose Source Repos To Use To Build Packages',
             'choices': choices,
             'width': 76,
             'height': 16,
@@ -1504,6 +1532,22 @@ class Wizard(Config):
         }
 
         self.dists_vm_selected = self.ui.dists(**info)  # pylint: disable=W0201
+
+    def set_qubes_repos(self):
+        ''''''
+        choices = []
+
+        choices.insert(0, ('current', 'Stable repository', False))
+        choices.insert(1, ('current-testing', 'Testing repository', False))
+
+        info = {
+            'title': 'Choose Pre-Built Packages Repositories',
+            'choices': choices,
+            'width': 76,
+            'height': 10,
+        }
+
+        self.qubes_repos_selected = self.ui.dists(**info)  # pylint: disable=W0201
 
     def get_sources(self):
         '''Prompt user to get sources.
