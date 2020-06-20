@@ -766,6 +766,7 @@ update-repo-templates-community-testing: SNAPSHOT_REPO=templates-community-testi
 update-repo-templates-community: SNAPSHOT_REPO=templates-community-testing
 update-repo-templates-community: MAKE_TARGET=update-repo-from-snapshot
 
+update-repo-sources: MAKE_TARGET=update-repo-sources
 
 # add dependency on each combination of:
 # internal-update-repo-$(TARGET_REPO).$(PACKAGE_SET).$(DIST).$(COMPONENT)
@@ -787,6 +788,8 @@ update-repo-templates-%: $(addprefix internal-update-repo-templates-%.vm.,$(DIST
 update-repo-template:
 	@true
 
+$(addprefix internal-update-repo-sources.vm.,$(DISTS_VM_NO_FLAVOR)): internal-update-repo-sources.vm.% : $(addprefix internal-update-repo-sources.vm.%., $(COMPONENTS_NO_TPL_BUILDER))
+	@true
 $(addprefix internal-update-repo-current.vm.,$(DISTS_VM_NO_FLAVOR)): internal-update-repo-current.vm.% : $(addprefix internal-update-repo-current.vm.%., $(COMPONENTS_NO_TPL_BUILDER))
 	@true
 $(addprefix internal-update-repo-current-testing.vm.,$(DISTS_VM_NO_FLAVOR)): internal-update-repo-current-testing.vm.% : $(addprefix internal-update-repo-current-testing.vm.%., $(COMPONENTS_NO_TPL_BUILDER))
@@ -858,10 +861,6 @@ internal-update-repo-%:
 			SNAPSHOT_FILE=$(BUILDER_DIR)/repo-latest-snapshot/$(SNAPSHOT_REPO)-$(PACKAGE_SET)-$(DIST)-`basename $(REPO)` \
 			BUILD_LOG_URL=$(BUILD_LOG_URL) \
 			$(MAKE_TARGET) || exit 1; \
-	elif $(MAKE) -C $(REPO) -n update-repo-$(TARGET_REPO) >/dev/null 2>/dev/null; then \
-		echo "Updating $(REPO)... "; \
-		DIST=$(DIST) UPDATE_REPO=$(BUILDER_DIR)/$$repo_basedir/$(UPDATE_REPO_SUBDIR) \
-		$(MAKE) -s -C $(REPO) update-repo-$(TARGET_REPO) || exit 1; \
 	else \
 		echo -n "Updating $(REPO)... skipping."; \
 	fi; \

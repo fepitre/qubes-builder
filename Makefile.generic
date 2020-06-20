@@ -106,20 +106,8 @@ include $(BUILDER_MAKEFILE)
 DIST_SRC_ROOT=$(DIST_BUILD_DIR)/qubes-src
 DIST_SRC=$(DIST_SRC_ROOT)/$(COMPONENT)
 
-ifneq (,$(GIT_TARBALL_NAME))
-  ifneq (1,$(NO_ARCHIVE))
-TARBALL_COPY_IN = make-git-tarball
-  endif
-endif
-
 .PHONY: copy-in
-copy-in: generic-copy-in $(TARBALL_COPY_IN) $(SOURCE_COPY_IN)
-
-
-.PHONY: make-git-tarball
-make-git-tarball:
-	git -C $(CHROOT_DIR)$(DIST_SRC) clean -f -d -X
-	$(BUILDER_DIR)/scripts/create-archive $(CHROOT_DIR)$(DIST_SRC) $(GIT_TARBALL_NAME)
+copy-in: generic-copy-in $(SOURCE_COPY_IN)
 
 .PHONY: generic-copy-in
 generic-copy-in:

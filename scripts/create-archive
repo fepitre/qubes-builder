@@ -19,7 +19,7 @@ else
 fi
 
 # We enter in the qubes source component
-pushd "$GIT_ARCHIVE_SRC"
+pushd "$GIT_ARCHIVE_SRC" > /dev/null 2>&1
 
 # Define SOURCE_DATE_EPOCH from git latest commit timestamp
 SOURCE_DATE_EPOCH=$(git log -1 --format=%ct)
@@ -70,4 +70,4 @@ case "$GIT_ARCHIVE_TYPE" in
         exit 1;;
 esac
 
-popd
+popd > /dev/null 2>&1
