@@ -1,0 +1,12 @@
+{
+    "mgmt-salt-dom0-update": {
+        "releases": {
+            "4.0": {
+                "branch": "release4.0"
+            },
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "builder-archlinux": {
+        "dists": [
+            "archlinux"
+        ],
+        "plugin": 1,
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            },
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    }
+}

@@ -1,0 +1,998 @@
+{
+    "releases": {
+        "4.0": {
+            "dom0": "fc25",
+            "vms": [
+                "fc30",
+                "fc31",
+                "fc32",
+                "centos7",
+                "centos8",
+                "stretch",
+                "buster",
+                "bullseye"
+            ]
+        },
+        "4.1": {
+            "devel": 1,
+            "dom0": "fc32",
+            "vms": [
+                "fc32",
+                "fc33",
+                "centos7",
+                "centos8",
+                "buster",
+                "bullseye"
+            ]
+        }
+    },
+    "components": {
+        "vmm-xen": {
+            "releases": {
+                "4.0": {
+                    "branch": "xen-4.8"
+                },
+                "4.1": {
+                    "branch": "xen-4.14"
+                }
+            }
+        },
+        "core-libvirt": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "core-vchan-xen": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "core-qubesdb": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "core-qrexec": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "linux-utils": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "python-cffi": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "python-xcffib": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "python-quamash": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "python-objgraph": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "python-hid": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "python-u2flib-host": {
+            "releases": {
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "python-qasync": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "python-panflute": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "core-admin": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "core-admin-client": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "core-admin-addon-whonix": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "core-admin-linux": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "core-agent-linux": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "intel-microcode": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "linux-firmware": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "linux-kernel": {
+            "releases": {
+                "4.0": {
+                    "branch": "stable-4.19"
+                },
+                "4.1": {
+                    "branch": "stable-5.4"
+                }
+            }
+        },
+        "artwork": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "grub2": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "grub2-theme": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "gui-common": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "gui-daemon": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "gui-agent-linux": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "gui-agent-xen-hvm-stubdom": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "seabios": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "vmm-xen-stubdom-legacy": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "vmm-xen-stubdom-linux": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "app-linux-split-gpg": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "app-thunderbird": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "app-linux-pdf-converter": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "app-linux-img-converter": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "app-linux-input-proxy": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "app-linux-usb-proxy": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "app-linux-snapd-helper": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "app-shutdown-idle": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "app-yubikey": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "app-u2f": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "infrastructure": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "meta-packages": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "manager": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "desktop-linux-common": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "desktop-linux-kde": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "desktop-linux-xfce4": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "desktop-linux-xfce4-xfwm4": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "desktop-linux-i3": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "desktop-linux-i3-settings-qubes": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "desktop-linux-awesome": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "desktop-linux-manager": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "grubby-dummy": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "linux-pvgrub2": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "linux-gbulb": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "linux-scrypt": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "linux-template-builder": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "installer-qubes-os": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "qubes-release": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "pykickstart": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "blivet": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "lorax": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "lorax-templates": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "anaconda": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "anaconda-addon": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "linux-yum": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "linux-deb": {
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "tpm-extra": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "trousers-changer": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "antievilmaid": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "dummy-psu": {
+            "releases": {
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "dummy-backlight": {
+            "releases": {
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "template-whonix": {
+            "dists": [
+                "whonix"
+            ],
+            "plugin": 1,
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "template-kali": {
+            "dists": [
+                "kali"
+            ],
+            "plugin": 1,
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "builder": {
+            "plugin": 1,
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "builder-debian": {
+            "dists": [
+                "stretch",
+                "buster",
+                "bullseye",
+                "whonix",
+                "kali",
+                "xenial",
+                "bionic",
+                "focal"
+            ],
+            "plugin": 1,
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "builder-rpm": {
+            "dists": [
+                "fc",
+                "centos"
+            ],
+            "plugin": 1,
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "builder-archlinux": {
+            "dists": [
+                "archlinux"
+            ],
+            "plugin": 1,
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "builder-gentoo": {
+            "dists": [
+                "gentoo"
+            ],
+            "plugin": 1,
+            "releases": {
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "builder-github": {
+            "plugin": 1,
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "builder-windows": {
+            "dists": [
+                "win7x64"
+            ],
+            "plugin": 1,
+            "releases": {
+                "4.0": {
+                    "branch": "master"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "mgmt-salt": {
+            "plugin": 1,
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "mgmt-salt-base": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "mgmt-salt-base-topd": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "mgmt-salt-base-config": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "mgmt-salt-dom0-qvm": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "mgmt-salt-dom0-virtual-machines": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "mgmt-salt-dom0-update": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "vmm-xen-windows-pvdrivers": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "windows-utils": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "core-agent-windows": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "gui-agent-windows": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        },
+        "installer-qubes-os-windows-tools": {
+            "releases": {
+                "4.0": {
+                    "branch": "release4.0"
+                },
+                "4.1": {
+                    "branch": "master"
+                }
+            }
+        }
+    }
+}

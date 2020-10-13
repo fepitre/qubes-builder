@@ -1,0 +1,12 @@
+{
+    "linux-kernel": {
+        "releases": {
+            "4.0": {
+                "branch": "stable-4.19"
+            },
+            "4.1": {
+                "branch": "stable-5.4"
+            }
+        }
+    }
+}

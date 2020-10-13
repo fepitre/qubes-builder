@@ -1,0 +1,12 @@
+{
+    "app-linux-pdf-converter": {
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            },
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    }
+}

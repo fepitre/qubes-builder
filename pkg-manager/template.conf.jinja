@@ -1,0 +1,70 @@
+# vim: ft=make ts=4 sw=4
+
+# Ready to use config for full build of the Qubes OS R{{release}}.
+
+GIT_BASEURL ?= https://github.com
+GIT_PREFIX ?= QubesOS/qubes-
+{%- if devel != 1 %}
+BRANCH ?= release{{release}}
+{%- endif %}
+
+NO_SIGN ?= 1
+BACKEND_VMM ?= xen
+TEMPLATE_ROOT_WITH_PARTITIONS = 1
+
+DIST_DOM0 ?= {{dist_dom0}}
+DISTS_VM ?={% for vm in dists_vm %} {{vm}}{% endfor %}
+
+BUILDER_PLUGINS ?= {{ '\\' if builder_plugins|length > 0 }}
+{%- for component in builder_plugins %}
+	{{component}}{{ ' \\' if not loop.last }}
+{%- endfor %}
+
+WINDOWS_COMPONENTS ?= {{ '\\' if windows_components|length > 0 }}
+{%- for component in windows_components %}
+	{{component}}{{ ' \\' if not loop.last }}
+{%- endfor %}
+
+COMPONENTS ?= \
+	$(BUILDER_PLUGIN){{ ' \\' if components|length > 0 }}
+{%- for component in components %}
+	{{component}}{{ ' \\' if not loop.last }}
+{%- endfor %}
+
+# Specific branch for components
+{%- for branch in branches %}
+{{branch}}
+{%- endfor %}
+
+# Uncomment this to enable windows tools build
+#DISTS_VM += win7x64
+#COMPONENTS += $(WINDOWS_COMPONENTS)
+#BUILDER_PLUGINS += builder-windows
+
+# Uncomment this lines to enable Whonix template build
+#DISTS_VM += whonix-gateway whonix-workstation
+#COMPONENTS += template-whonix
+#BUILDER_PLUGINS += template-whonix
+
+# Uncomment this lines to enable Debian template build
+#DISTS_VM += stretch
+#COMPONENTS += builder-debian
+#BUILDER_PLUGINS += builder-debian
+
+# Uncomment this line to enable Archlinux template build
+#DISTS_VM += archlinux
+#COMPONENTS += builder-archlinux
+#BUILDER_PLUGINS += builder-archlinux
+
+TEMPLATE_LABELS ?= {{ '\\' if template_labels|length > 0 }}
+{%- for label in template_labels %}
+	{{label}}{{ ' \\' if not loop.last }}
+{%- endfor %}
+
+TEMPLATE_ALIAS ?= {{ '\\' if template_aliases|length > 0 }}
+{%- for alias in template_aliases %}
+	{{alias}}{{ ' \\' if not loop.last }}
+{%- endfor %}
+
+about::
+	@echo "qubes-os-r{{release}}.conf"

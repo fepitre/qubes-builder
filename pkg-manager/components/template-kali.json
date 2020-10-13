@@ -1,0 +1,16 @@
+{
+    "template-kali": {
+        "dists": [
+            "kali"
+        ],
+        "plugin": 1,
+        "releases": {
+            "4.0": {
+                "branch": "master"
+            },
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    }
+}

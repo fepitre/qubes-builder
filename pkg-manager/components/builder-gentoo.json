@@ -1,0 +1,13 @@
+{
+    "builder-gentoo": {
+        "dists": [
+            "gentoo"
+        ],
+        "plugin": 1,
+        "releases": {
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    }
+}

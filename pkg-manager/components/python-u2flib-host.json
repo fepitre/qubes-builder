@@ -1,0 +1,9 @@
+{
+    "python-u2flib-host": {
+        "releases": {
+            "4.1": {
+                "branch": "master"
+            }
+        }
+    }
+}
