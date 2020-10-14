@@ -2,10 +2,79 @@
     "core-libvirt": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "libvirt",
+                        "libvirt-docs",
+                        "libvirt-daemon",
+                        "libvirt-daemon-config-nwfilter",
+                        "libvirt-daemon-driver-nwfilter",
+                        "libvirt-daemon-driver-nodedev",
+                        "libvirt-daemon-driver-interface",
+                        "libvirt-daemon-driver-secret",
+                        "libvirt-daemon-driver-storage-core",
+                        "libvirt-daemon-driver-storage-logical",
+                        "libvirt-daemon-driver-storage-disk",
+                        "libvirt-daemon-driver-storage-scsi",
+                        "libvirt-daemon-driver-storage-iscsi",
+                        "libvirt-daemon-driver-storage-mpath",
+                        "libvirt-daemon-driver-storage-gluster",
+                        "libvirt-daemon-driver-storage",
+                        "libvirt-daemon-driver-xen",
+                        "libvirt-daemon-driver-libxl",
+                        "libvirt-daemon-xen",
+                        "libvirt-client",
+                        "libvirt-libs",
+                        "libvirt-admin",
+                        "libvirt-devel",
+                        "libvirt-debuginfo",
+                        "libvirt-debugsource",
+                        "libvirt-python",
+                        "libvirt-python3",
+                        "libvirt-python-debuginfo",
+                        "libvirt-python-debugsource"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "libvirt",
+                        "libvirt-docs",
+                        "libvirt-daemon",
+                        "libvirt-daemon-config-nwfilter",
+                        "libvirt-daemon-driver-nwfilter",
+                        "libvirt-daemon-driver-nodedev",
+                        "libvirt-daemon-driver-interface",
+                        "libvirt-daemon-driver-secret",
+                        "libvirt-daemon-driver-storage-core",
+                        "libvirt-daemon-driver-storage-logical",
+                        "libvirt-daemon-driver-storage-disk",
+                        "libvirt-daemon-driver-storage-scsi",
+                        "libvirt-daemon-driver-storage-iscsi",
+                        "libvirt-daemon-driver-storage-mpath",
+                        "libvirt-daemon-driver-storage-gluster",
+                        "libvirt-daemon-driver-storage-zfs",
+                        "libvirt-daemon-driver-storage",
+                        "libvirt-daemon-driver-libxl",
+                        "libvirt-daemon-xen",
+                        "libvirt-client",
+                        "libvirt-libs",
+                        "libvirt-admin",
+                        "libvirt-bash-completion",
+                        "libvirt-devel",
+                        "libvirt-debuginfo",
+                        "libvirt-debugsource",
+                        "libvirt-python",
+                        "python3-libvirt",
+                        "libvirt-python-debuginfo",
+                        "libvirt-python-debugsource"
+                    ]
+                },
+                "vms": {}
             }
         }
     }

@@ -2,10 +2,22 @@
     "core-admin-addon-whonix": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-core-admin-addon-whonix"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-core-admin-addon-whonix"
+                    ]
+                },
+                "vms": {}
             }
         }
     }

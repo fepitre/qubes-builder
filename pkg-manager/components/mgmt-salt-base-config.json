@@ -2,10 +2,35 @@
     "mgmt-salt-base-config": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {
+                    "stretch": [
+                        "qubes-mgmt-salt-base-config"
+                    ],
+                    "buster": [
+                        "qubes-mgmt-salt-base-config"
+                    ],
+                    "bullseye": [
+                        "qubes-mgmt-salt-base-config"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": []
+                },
+                "vms": {
+                    "buster": [
+                        "qubes-mgmt-salt-base-config"
+                    ],
+                    "bullseye": [
+                        "qubes-mgmt-salt-base-config"
+                    ]
+                }
             }
         }
     }

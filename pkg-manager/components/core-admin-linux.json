@@ -2,10 +2,30 @@
     "core-admin-linux": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-core-dom0-linux",
+                        "qubes-core-dom0-linux-kernel-install",
+                        "qubes-core-dom0-linux-debuginfo",
+                        "qubes-core-dom0-linux-debugsource",
+                        "qubes-core-dom0-vaio-fixes"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-core-dom0-linux",
+                        "qubes-core-dom0-linux-kernel-install",
+                        "qubes-core-dom0-vaio-fixes",
+                        "qubes-core-dom0-linux-debuginfo",
+                        "qubes-core-dom0-linux-debugsource"
+                    ]
+                },
+                "vms": {}
             }
         }
     }

@@ -2,10 +2,20 @@
     "grub2-theme": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "grub2-qubes-theme"
+                    ]
+                },
+                "vms": {}
             }
         }
     }

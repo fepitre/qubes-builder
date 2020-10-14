@@ -2,10 +2,111 @@
     "meta-packages": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-dom0-meta-packages",
+                        "qubes-repo-contrib"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-vm-meta-packages",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended",
+                        "qubes-repo-contrib"
+                    ],
+                    "fc31": [
+                        "qubes-vm-meta-packages",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended",
+                        "qubes-repo-contrib"
+                    ],
+                    "fc32": [
+                        "qubes-vm-meta-packages",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended",
+                        "qubes-repo-contrib"
+                    ],
+                    "centos7": [
+                        "qubes-vm-meta-packages",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended",
+                        "qubes-repo-contrib"
+                    ],
+                    "centos8": [
+                        "qubes-vm-meta-packages",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended",
+                        "qubes-repo-contrib"
+                    ],
+                    "stretch": [
+                        "qubes-repo-contrib",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended"
+                    ],
+                    "buster": [
+                        "qubes-repo-contrib",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended"
+                    ],
+                    "bullseye": [
+                        "qubes-repo-contrib",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-dom0-meta-packages",
+                        "qubes-repo-contrib"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-vm-meta-packages",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended",
+                        "qubes-repo-contrib",
+                        "qubes-vm-guivm"
+                    ],
+                    "fc33": [
+                        "qubes-vm-meta-packages",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended",
+                        "qubes-repo-contrib",
+                        "qubes-vm-guivm"
+                    ],
+                    "centos7": [
+                        "qubes-vm-meta-packages",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended",
+                        "qubes-repo-contrib",
+                        "qubes-vm-guivm"
+                    ],
+                    "centos8": [
+                        "qubes-vm-meta-packages",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended",
+                        "qubes-repo-contrib",
+                        "qubes-vm-guivm"
+                    ],
+                    "buster": [
+                        "qubes-repo-contrib",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended",
+                        "qubes-vm-guivm"
+                    ],
+                    "bullseye": [
+                        "qubes-repo-contrib",
+                        "qubes-vm-dependencies",
+                        "qubes-vm-recommended",
+                        "qubes-vm-guivm"
+                    ]
+                }
             }
         }
     }

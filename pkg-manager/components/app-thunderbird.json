@@ -2,10 +2,62 @@
     "app-thunderbird": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {
+                    "fc30": [
+                        "thunderbird-qubes"
+                    ],
+                    "fc31": [
+                        "thunderbird-qubes"
+                    ],
+                    "fc32": [
+                        "thunderbird-qubes"
+                    ],
+                    "centos7": [
+                        "thunderbird-qubes"
+                    ],
+                    "centos8": [
+                        "thunderbird-qubes"
+                    ],
+                    "stretch": [
+                        "qubes-thunderbird"
+                    ],
+                    "buster": [
+                        "qubes-thunderbird"
+                    ],
+                    "bullseye": [
+                        "qubes-thunderbird"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": []
+                },
+                "vms": {
+                    "fc32": [
+                        "thunderbird-qubes"
+                    ],
+                    "fc33": [
+                        "thunderbird-qubes"
+                    ],
+                    "centos7": [
+                        "thunderbird-qubes"
+                    ],
+                    "centos8": [
+                        "thunderbird-qubes"
+                    ],
+                    "buster": [
+                        "qubes-thunderbird"
+                    ],
+                    "bullseye": [
+                        "qubes-thunderbird"
+                    ]
+                }
             }
         }
     }

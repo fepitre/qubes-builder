@@ -2,10 +2,54 @@
     "app-linux-pdf-converter": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "qubes-pdf-converter-dom0"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-pdf-converter"
+                    ],
+                    "fc31": [
+                        "qubes-pdf-converter"
+                    ],
+                    "fc32": [
+                        "qubes-pdf-converter"
+                    ],
+                    "stretch": [
+                        "qubes-pdf-converter"
+                    ],
+                    "buster": [
+                        "qubes-pdf-converter"
+                    ],
+                    "bullseye": [
+                        "qubes-pdf-converter"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-pdf-converter-dom0"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-pdf-converter"
+                    ],
+                    "fc33": [
+                        "qubes-pdf-converter"
+                    ],
+                    "buster": [
+                        "qubes-pdf-converter"
+                    ],
+                    "bullseye": [
+                        "qubes-pdf-converter"
+                    ]
+                }
             }
         }
     }

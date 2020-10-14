@@ -2,10 +2,77 @@
     "linux-gbulb": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "python-gbulb",
+                        "python3-gbulb"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "python-gbulb",
+                        "python3-gbulb"
+                    ],
+                    "fc31": [
+                        "python-gbulb",
+                        "python3-gbulb"
+                    ],
+                    "fc32": [
+                        "python-gbulb",
+                        "python3-gbulb"
+                    ],
+                    "centos7": [
+                        "python-gbulb",
+                        "python3-gbulb"
+                    ],
+                    "centos8": [
+                        "python-gbulb",
+                        "python3-gbulb"
+                    ],
+                    "stretch": [
+                        "python3-gbulb"
+                    ],
+                    "buster": [
+                        "python3-gbulb"
+                    ],
+                    "bullseye": [
+                        "python3-gbulb"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "python-gbulb",
+                        "python3-gbulb"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "python-gbulb",
+                        "python3-gbulb"
+                    ],
+                    "fc33": [
+                        "python-gbulb",
+                        "python3-gbulb"
+                    ],
+                    "centos7": [
+                        "python-gbulb",
+                        "python3-gbulb"
+                    ],
+                    "centos8": [
+                        "python-gbulb",
+                        "python3-gbulb"
+                    ],
+                    "buster": [
+                        "python3-gbulb"
+                    ],
+                    "bullseye": [
+                        "python3-gbulb"
+                    ]
+                }
             }
         }
     }

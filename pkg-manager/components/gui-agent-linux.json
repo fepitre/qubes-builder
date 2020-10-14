@@ -2,10 +2,123 @@
     "gui-agent-linux": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-gui-agent",
+                        "pulseaudio-qubes",
+                        "qubes-gui-agent-xfce",
+                        "qubes-gui-agent-debuginfo",
+                        "qubes-gui-agent-debugsource"
+                    ],
+                    "fc31": [
+                        "qubes-gui-agent",
+                        "pulseaudio-qubes",
+                        "qubes-gui-agent-xfce",
+                        "qubes-gui-agent-debuginfo",
+                        "qubes-gui-agent-debugsource"
+                    ],
+                    "fc32": [
+                        "qubes-gui-agent",
+                        "pulseaudio-qubes",
+                        "qubes-gui-agent-xfce",
+                        "qubes-gui-agent-debuginfo",
+                        "qubes-gui-agent-debugsource"
+                    ],
+                    "centos7": [
+                        "qubes-gui-agent",
+                        "pulseaudio-qubes",
+                        "qubes-gui-agent-xfce",
+                        "qubes-gui-agent-debuginfo",
+                        "qubes-gui-agent-debugsource"
+                    ],
+                    "centos8": [
+                        "qubes-gui-agent",
+                        "pulseaudio-qubes",
+                        "qubes-gui-agent-xfce",
+                        "qubes-gui-agent-debuginfo",
+                        "qubes-gui-agent-debugsource"
+                    ],
+                    "stretch": [
+                        "qubes-gui-agent",
+                        "xserver-xorg-video-dummyqbs",
+                        "xserver-xorg-input-qubes",
+                        "pulseaudio-qubes"
+                    ],
+                    "buster": [
+                        "qubes-gui-agent",
+                        "xserver-xorg-video-dummyqbs",
+                        "xserver-xorg-input-qubes",
+                        "pulseaudio-qubes"
+                    ],
+                    "bullseye": [
+                        "qubes-gui-agent",
+                        "xserver-xorg-video-dummyqbs",
+                        "xserver-xorg-input-qubes",
+                        "pulseaudio-qubes"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-gui-agent",
+                        "pulseaudio-qubes",
+                        "qubes-gui-agent-xfce",
+                        "qubes-gui-agent-debuginfo",
+                        "qubes-gui-agent-debugsource"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-gui-agent",
+                        "pulseaudio-qubes",
+                        "qubes-gui-agent-xfce",
+                        "qubes-gui-agent-debuginfo",
+                        "qubes-gui-agent-debugsource"
+                    ],
+                    "fc33": [
+                        "qubes-gui-agent",
+                        "pulseaudio-qubes",
+                        "qubes-gui-agent-xfce",
+                        "qubes-gui-agent-debuginfo",
+                        "qubes-gui-agent-debugsource"
+                    ],
+                    "centos7": [
+                        "qubes-gui-agent",
+                        "pulseaudio-qubes",
+                        "qubes-gui-agent-xfce",
+                        "qubes-gui-agent-debuginfo",
+                        "qubes-gui-agent-debugsource"
+                    ],
+                    "centos8": [
+                        "qubes-gui-agent",
+                        "pulseaudio-qubes",
+                        "qubes-gui-agent-xfce",
+                        "qubes-gui-agent-debuginfo",
+                        "qubes-gui-agent-debugsource"
+                    ],
+                    "buster": [
+                        "qubes-gui-agent",
+                        "xserver-xorg-qubes-common",
+                        "xserver-xorg-video-dummyqbs",
+                        "xserver-xorg-input-qubes",
+                        "pulseaudio-qubes",
+                        "qubes-gui-agent-xfce"
+                    ],
+                    "bullseye": [
+                        "qubes-gui-agent",
+                        "xserver-xorg-qubes-common",
+                        "xserver-xorg-video-dummyqbs",
+                        "xserver-xorg-input-qubes",
+                        "pulseaudio-qubes",
+                        "qubes-gui-agent-xfce"
+                    ]
+                }
             }
         }
     }

@@ -2,10 +2,44 @@
     "python-qasync": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "python-qasync",
+                        "python3-qasync"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "python-qasync",
+                        "python3-qasync"
+                    ],
+                    "fc33": [
+                        "python-qasync",
+                        "python3-qasync"
+                    ],
+                    "centos7": [
+                        "python-qasync",
+                        "python3-qasync"
+                    ],
+                    "centos8": [
+                        "python-qasync",
+                        "python3-qasync"
+                    ],
+                    "buster": [
+                        "python3-qasync"
+                    ],
+                    "bullseye": [
+                        "python3-qasync"
+                    ]
+                }
             }
         }
     }

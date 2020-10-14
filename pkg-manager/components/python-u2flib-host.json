@@ -2,7 +2,34 @@
     "python-u2flib-host": {
         "releases": {
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "python-u2flib-host",
+                        "python3-u2flib-host"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "python-u2flib-host",
+                        "python3-u2flib-host"
+                    ],
+                    "fc33": [
+                        "python-u2flib-host",
+                        "python3-u2flib-host"
+                    ],
+                    "centos7": [
+                        "python-u2flib-host",
+                        "python3-u2flib-host"
+                    ],
+                    "centos8": [
+                        "python-u2flib-host",
+                        "python3-u2flib-host"
+                    ],
+                    "buster": [
+                        "python3-u2flib-host"
+                    ]
+                }
             }
         }
     }

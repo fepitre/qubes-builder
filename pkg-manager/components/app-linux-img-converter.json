@@ -2,10 +2,66 @@
     "app-linux-img-converter": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "qubes-img-converter-dom0"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-img-converter"
+                    ],
+                    "fc31": [
+                        "qubes-img-converter"
+                    ],
+                    "fc32": [
+                        "qubes-img-converter"
+                    ],
+                    "centos7": [
+                        "qubes-img-converter"
+                    ],
+                    "centos8": [
+                        "qubes-img-converter"
+                    ],
+                    "stretch": [
+                        "qubes-img-converter"
+                    ],
+                    "buster": [
+                        "qubes-img-converter"
+                    ],
+                    "bullseye": [
+                        "qubes-img-converter"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-img-converter-dom0"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-img-converter"
+                    ],
+                    "fc33": [
+                        "qubes-img-converter"
+                    ],
+                    "centos7": [
+                        "qubes-img-converter"
+                    ],
+                    "centos8": [
+                        "qubes-img-converter"
+                    ],
+                    "buster": [
+                        "qubes-img-converter"
+                    ],
+                    "bullseye": [
+                        "qubes-img-converter"
+                    ]
+                }
             }
         }
     }

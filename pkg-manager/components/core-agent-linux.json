@@ -2,10 +2,204 @@
     "core-agent-linux": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-core-agent",
+                        "python2-dnf-plugins-qubes-hooks",
+                        "python3-dnf-plugins-qubes-hooks",
+                        "qubes-core-agent-qrexec",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-debuginfo",
+                        "qubes-core-agent-debugsource",
+                        "qubes-core-agent-sysvinit",
+                        "qubes-core-agent-systemd"
+                    ],
+                    "fc31": [
+                        "qubes-core-agent",
+                        "python2-dnf-plugins-qubes-hooks",
+                        "python3-dnf-plugins-qubes-hooks",
+                        "qubes-core-agent-qrexec",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-debuginfo",
+                        "qubes-core-agent-debugsource",
+                        "qubes-core-agent-sysvinit",
+                        "qubes-core-agent-systemd"
+                    ],
+                    "fc32": [
+                        "qubes-core-agent",
+                        "python2-dnf-plugins-qubes-hooks",
+                        "python3-dnf-plugins-qubes-hooks",
+                        "qubes-core-agent-qrexec",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-debuginfo",
+                        "qubes-core-agent-debugsource",
+                        "qubes-core-agent-sysvinit",
+                        "qubes-core-agent-systemd"
+                    ],
+                    "centos7": [
+                        "qubes-core-agent",
+                        "python2-dnf-plugins-qubes-hooks",
+                        "python3-dnf-plugins-qubes-hooks",
+                        "qubes-core-agent-qrexec",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-debuginfo",
+                        "qubes-core-agent-debugsource",
+                        "qubes-core-agent-sysvinit",
+                        "qubes-core-agent-systemd"
+                    ],
+                    "centos8": [
+                        "qubes-core-agent",
+                        "python2-dnf-plugins-qubes-hooks",
+                        "python3-dnf-plugins-qubes-hooks",
+                        "qubes-core-agent-qrexec",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-debuginfo",
+                        "qubes-core-agent-debugsource",
+                        "qubes-core-agent-sysvinit",
+                        "qubes-core-agent-systemd"
+                    ],
+                    "stretch": [
+                        "qubes-core-agent",
+                        "qubes-core-agent-qrexec",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root"
+                    ],
+                    "buster": [
+                        "qubes-core-agent",
+                        "qubes-core-agent-qrexec",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root"
+                    ],
+                    "bullseye": [
+                        "qubes-core-agent",
+                        "qubes-core-agent-qrexec",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": []
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-core-agent",
+                        "python2-dnf-plugins-qubes-hooks",
+                        "python3-dnf-plugins-qubes-hooks",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-debuginfo",
+                        "qubes-core-agent-debugsource",
+                        "qubes-core-agent-systemd"
+                    ],
+                    "fc33": [
+                        "qubes-core-agent",
+                        "python2-dnf-plugins-qubes-hooks",
+                        "python3-dnf-plugins-qubes-hooks",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-debuginfo",
+                        "qubes-core-agent-debugsource",
+                        "qubes-core-agent-systemd"
+                    ],
+                    "centos7": [
+                        "qubes-core-agent",
+                        "python2-dnf-plugins-qubes-hooks",
+                        "python3-dnf-plugins-qubes-hooks",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-debuginfo",
+                        "qubes-core-agent-debugsource",
+                        "qubes-core-agent-systemd"
+                    ],
+                    "centos8": [
+                        "qubes-core-agent",
+                        "python2-dnf-plugins-qubes-hooks",
+                        "python3-dnf-plugins-qubes-hooks",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-debuginfo",
+                        "qubes-core-agent-debugsource",
+                        "qubes-core-agent-systemd"
+                    ],
+                    "buster": [
+                        "qubes-core-agent",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root"
+                    ],
+                    "bullseye": [
+                        "qubes-core-agent",
+                        "qubes-core-agent-nautilus",
+                        "qubes-core-agent-thunar",
+                        "qubes-core-agent-dom0-updates",
+                        "qubes-core-agent-networking",
+                        "qubes-core-agent-network-manager",
+                        "qubes-core-agent-passwordless-root"
+                    ]
+                }
             }
         }
     }

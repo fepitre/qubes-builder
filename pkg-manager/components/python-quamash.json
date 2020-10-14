@@ -2,10 +2,62 @@
     "python-quamash": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "python-Quamash",
+                        "python3-Quamash"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "python-Quamash",
+                        "python3-Quamash"
+                    ],
+                    "fc31": [
+                        "python-Quamash",
+                        "python3-Quamash"
+                    ],
+                    "fc32": [
+                        "python-Quamash",
+                        "python3-Quamash"
+                    ],
+                    "centos7": [
+                        "python-Quamash",
+                        "python3-Quamash"
+                    ],
+                    "centos8": [
+                        "python-Quamash",
+                        "python3-Quamash"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "python-Quamash",
+                        "python3-Quamash"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "python-Quamash",
+                        "python3-Quamash"
+                    ],
+                    "fc33": [
+                        "python-Quamash",
+                        "python3-Quamash"
+                    ],
+                    "centos7": [
+                        "python-Quamash",
+                        "python3-Quamash"
+                    ],
+                    "centos8": [
+                        "python-Quamash",
+                        "python3-Quamash"
+                    ]
+                }
             }
         }
     }

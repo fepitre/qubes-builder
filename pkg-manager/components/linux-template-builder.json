@@ -5,7 +5,24 @@
                 "branch": "master"
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": []
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-template-"
+                    ],
+                    "fc33": [
+                        "qubes-template-"
+                    ],
+                    "centos7": [
+                        "qubes-template-"
+                    ],
+                    "centos8": [
+                        "qubes-template-"
+                    ]
+                }
             }
         }
     }

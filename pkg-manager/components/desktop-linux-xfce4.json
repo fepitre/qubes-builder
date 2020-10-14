@@ -2,10 +2,48 @@
     "desktop-linux-xfce4": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "garcon",
+                        "garcon-devel",
+                        "garcon-debuginfo",
+                        "garcon-debugsource",
+                        "xfce4-settings-qubes",
+                        "xfwm4",
+                        "xfwm4-debuginfo",
+                        "xfwm4-debugsource"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "xfce4-settings-qubes"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "xfce4-settings-qubes"
+                    ],
+                    "fc33": [
+                        "xfce4-settings-qubes"
+                    ],
+                    "centos7": [
+                        "xfce4-settings-qubes"
+                    ],
+                    "centos8": [
+                        "xfce4-settings-qubes"
+                    ],
+                    "buster": [
+                        "xfce4-settings-qubes"
+                    ],
+                    "bullseye": [
+                        "xfce4-settings-qubes"
+                    ]
+                }
             }
         }
     }

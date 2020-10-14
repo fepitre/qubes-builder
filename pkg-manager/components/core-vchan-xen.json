@@ -2,10 +2,104 @@
     "core-vchan-xen": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-libvchan-xen",
+                        "qubes-libvchan-xen-debuginfo",
+                        "qubes-libvchan-xen-debugsource",
+                        "qubes-libvchan-xen-devel"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-libvchan-xen",
+                        "qubes-libvchan-xen-debuginfo",
+                        "qubes-libvchan-xen-debugsource",
+                        "qubes-libvchan-xen-devel"
+                    ],
+                    "fc31": [
+                        "qubes-libvchan-xen",
+                        "qubes-libvchan-xen-debuginfo",
+                        "qubes-libvchan-xen-debugsource",
+                        "qubes-libvchan-xen-devel"
+                    ],
+                    "fc32": [
+                        "qubes-libvchan-xen",
+                        "qubes-libvchan-xen-debuginfo",
+                        "qubes-libvchan-xen-debugsource",
+                        "qubes-libvchan-xen-devel"
+                    ],
+                    "centos7": [
+                        "qubes-libvchan-xen",
+                        "qubes-libvchan-xen-debuginfo",
+                        "qubes-libvchan-xen-debugsource",
+                        "qubes-libvchan-xen-devel"
+                    ],
+                    "centos8": [
+                        "qubes-libvchan-xen",
+                        "qubes-libvchan-xen-debuginfo",
+                        "qubes-libvchan-xen-debugsource",
+                        "qubes-libvchan-xen-devel"
+                    ],
+                    "stretch": [
+                        "libvchan-xen",
+                        "libvchan-xen-dev"
+                    ],
+                    "buster": [
+                        "libvchan-xen",
+                        "libvchan-xen-dev"
+                    ],
+                    "bullseye": [
+                        "libvchan-xen",
+                        "libvchan-xen-dev"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-libvchan-xen",
+                        "qubes-libvchan-xen-debuginfo",
+                        "qubes-libvchan-xen-debugsource",
+                        "qubes-libvchan-xen-devel"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-libvchan-xen",
+                        "qubes-libvchan-xen-debuginfo",
+                        "qubes-libvchan-xen-debugsource",
+                        "qubes-libvchan-xen-devel"
+                    ],
+                    "fc33": [
+                        "qubes-libvchan-xen",
+                        "qubes-libvchan-xen-debuginfo",
+                        "qubes-libvchan-xen-debugsource",
+                        "qubes-libvchan-xen-devel"
+                    ],
+                    "centos7": [
+                        "qubes-libvchan-xen",
+                        "qubes-libvchan-xen-debuginfo",
+                        "qubes-libvchan-xen-debugsource",
+                        "qubes-libvchan-xen-devel"
+                    ],
+                    "centos8": [
+                        "qubes-libvchan-xen",
+                        "qubes-libvchan-xen-debuginfo",
+                        "qubes-libvchan-xen-debugsource",
+                        "qubes-libvchan-xen-devel"
+                    ],
+                    "buster": [
+                        "libvchan-xen",
+                        "libvchan-xen-dev"
+                    ],
+                    "bullseye": [
+                        "libvchan-xen",
+                        "libvchan-xen-dev"
+                    ]
+                }
             }
         }
     }

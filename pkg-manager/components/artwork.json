@@ -2,10 +2,57 @@
     "artwork": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-artwork",
+                        "qubes-artwork-efi"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-artwork",
+                        "qubes-artwork-plymouth",
+                        "qubes-artwork-efi",
+                        "qubes-artwork-anaconda"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-artwork",
+                        "qubes-artwork-plymouth",
+                        "qubes-artwork-efi",
+                        "qubes-artwork-anaconda"
+                    ],
+                    "fc33": [
+                        "qubes-artwork",
+                        "qubes-artwork-plymouth",
+                        "qubes-artwork-efi",
+                        "qubes-artwork-anaconda"
+                    ],
+                    "centos7": [
+                        "qubes-artwork",
+                        "qubes-artwork-plymouth",
+                        "qubes-artwork-efi",
+                        "qubes-artwork-anaconda"
+                    ],
+                    "centos8": [
+                        "qubes-artwork",
+                        "qubes-artwork-plymouth",
+                        "qubes-artwork-efi",
+                        "qubes-artwork-anaconda"
+                    ],
+                    "buster": [
+                        "qubes-artwork"
+                    ],
+                    "bullseye": [
+                        "qubes-artwork"
+                    ]
+                }
             }
         }
     }

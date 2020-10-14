@@ -2,10 +2,47 @@
     "desktop-linux-awesome": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "awesome",
+                        "awesome-doc",
+                        "awesome-debuginfo",
+                        "awesome-debugsource"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "awesome",
+                        "awesome-doc",
+                        "awesome-debuginfo",
+                        "awesome-debugsource"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "awesome",
+                        "awesome-doc",
+                        "awesome-debuginfo",
+                        "awesome-debugsource"
+                    ],
+                    "fc33": [
+                        "awesome",
+                        "awesome-doc",
+                        "awesome-debuginfo",
+                        "awesome-debugsource"
+                    ],
+                    "centos8": [
+                        "awesome",
+                        "awesome-doc",
+                        "awesome-debuginfo",
+                        "awesome-debugsource"
+                    ]
+                }
             }
         }
     }

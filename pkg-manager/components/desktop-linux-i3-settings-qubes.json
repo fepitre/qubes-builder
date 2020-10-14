@@ -2,10 +2,39 @@
     "desktop-linux-i3-settings-qubes": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "i3-settings-qubes"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "i3-settings-qubes"
+                    ],
+                    "fc33": [
+                        "i3-settings-qubes"
+                    ],
+                    "centos7": [
+                        "i3-settings-qubes"
+                    ],
+                    "centos8": [
+                        "i3-settings-qubes"
+                    ],
+                    "buster": [
+                        "i3-settings-qubes"
+                    ],
+                    "bullseye": [
+                        "i3-settings-qubes"
+                    ]
+                }
             }
         }
     }

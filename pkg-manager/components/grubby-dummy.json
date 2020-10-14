@@ -2,10 +2,41 @@
     "grubby-dummy": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {
+                    "fc30": [
+                        "grubby-dummy"
+                    ],
+                    "fc31": [
+                        "grubby-dummy"
+                    ],
+                    "fc32": [
+                        "grubby-dummy"
+                    ],
+                    "centos8": [
+                        "grubby-dummy"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": []
+                },
+                "vms": {
+                    "fc32": [
+                        "grubby-dummy"
+                    ],
+                    "fc33": [
+                        "grubby-dummy"
+                    ],
+                    "centos8": [
+                        "grubby-dummy"
+                    ]
+                }
             }
         }
     }

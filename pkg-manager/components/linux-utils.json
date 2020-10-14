@@ -2,10 +2,161 @@
     "linux-utils": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-utils",
+                        "python2-qubesimgconverter",
+                        "python3-qubesimgconverter",
+                        "qubes-utils-devel",
+                        "qubes-utils-libs",
+                        "qubes-utils-debuginfo",
+                        "qubes-utils-debugsource",
+                        "qubes-kernel-vm-support"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-utils",
+                        "python2-qubesimgconverter",
+                        "python3-qubesimgconverter",
+                        "qubes-utils-devel",
+                        "qubes-utils-libs",
+                        "qubes-utils-debuginfo",
+                        "qubes-utils-debugsource",
+                        "qubes-kernel-vm-support"
+                    ],
+                    "fc31": [
+                        "qubes-utils",
+                        "python2-qubesimgconverter",
+                        "python3-qubesimgconverter",
+                        "qubes-utils-devel",
+                        "qubes-utils-libs",
+                        "qubes-utils-debuginfo",
+                        "qubes-utils-debugsource",
+                        "qubes-kernel-vm-support"
+                    ],
+                    "fc32": [
+                        "qubes-utils",
+                        "python2-qubesimgconverter",
+                        "python3-qubesimgconverter",
+                        "qubes-utils-devel",
+                        "qubes-utils-libs",
+                        "qubes-utils-debuginfo",
+                        "qubes-utils-debugsource",
+                        "qubes-kernel-vm-support"
+                    ],
+                    "centos7": [
+                        "qubes-utils",
+                        "python2-qubesimgconverter",
+                        "python3-qubesimgconverter",
+                        "qubes-utils-devel",
+                        "qubes-utils-libs",
+                        "qubes-utils-debuginfo",
+                        "qubes-utils-debugsource",
+                        "qubes-kernel-vm-support"
+                    ],
+                    "centos8": [
+                        "qubes-utils",
+                        "python2-qubesimgconverter",
+                        "python3-qubesimgconverter",
+                        "qubes-utils-devel",
+                        "qubes-utils-libs",
+                        "qubes-utils-debuginfo",
+                        "qubes-utils-debugsource",
+                        "qubes-kernel-vm-support"
+                    ],
+                    "stretch": [
+                        "qubes-utils",
+                        "qubes-kernel-vm-support",
+                        "libqrexec-utils2",
+                        "libqubes-rpc-filecopy2",
+                        "libqrexec-utils-dev",
+                        "libqubes-rpc-filecopy-dev"
+                    ],
+                    "buster": [
+                        "qubes-utils",
+                        "qubes-kernel-vm-support",
+                        "libqrexec-utils2",
+                        "libqubes-rpc-filecopy2",
+                        "libqrexec-utils-dev",
+                        "libqubes-rpc-filecopy-dev"
+                    ],
+                    "bullseye": [
+                        "qubes-utils",
+                        "qubes-kernel-vm-support",
+                        "libqrexec-utils2",
+                        "libqubes-rpc-filecopy2",
+                        "libqrexec-utils-dev",
+                        "libqubes-rpc-filecopy-dev"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-utils",
+                        "python3-qubesimgconverter",
+                        "qubes-utils-devel",
+                        "qubes-utils-libs",
+                        "qubes-utils-debuginfo",
+                        "qubes-utils-debugsource",
+                        "qubes-kernel-vm-support"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-utils",
+                        "python3-qubesimgconverter",
+                        "qubes-utils-devel",
+                        "qubes-utils-libs",
+                        "qubes-utils-debuginfo",
+                        "qubes-utils-debugsource",
+                        "qubes-kernel-vm-support"
+                    ],
+                    "fc33": [
+                        "qubes-utils",
+                        "python3-qubesimgconverter",
+                        "qubes-utils-devel",
+                        "qubes-utils-libs",
+                        "qubes-utils-debuginfo",
+                        "qubes-utils-debugsource",
+                        "qubes-kernel-vm-support"
+                    ],
+                    "centos7": [
+                        "qubes-utils",
+                        "python3-qubesimgconverter",
+                        "qubes-utils-devel",
+                        "qubes-utils-libs",
+                        "qubes-utils-debuginfo",
+                        "qubes-utils-debugsource",
+                        "qubes-kernel-vm-support"
+                    ],
+                    "centos8": [
+                        "qubes-utils",
+                        "python3-qubesimgconverter",
+                        "qubes-utils-devel",
+                        "qubes-utils-libs",
+                        "qubes-utils-debuginfo",
+                        "qubes-utils-debugsource",
+                        "qubes-kernel-vm-support"
+                    ],
+                    "buster": [
+                        "qubes-utils",
+                        "qubes-kernel-vm-support",
+                        "libqubes-rpc-filecopy2",
+                        "libqubes-rpc-filecopy-dev",
+                        "python3-qubesimgconverter"
+                    ],
+                    "bullseye": [
+                        "qubes-utils",
+                        "qubes-kernel-vm-support",
+                        "libqubes-rpc-filecopy2",
+                        "libqubes-rpc-filecopy-dev",
+                        "python3-qubesimgconverter"
+                    ]
+                }
             }
         }
     }

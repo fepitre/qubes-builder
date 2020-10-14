@@ -2,10 +2,62 @@
     "app-linux-snapd-helper": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-snapd-helper"
+                    ],
+                    "fc31": [
+                        "qubes-snapd-helper"
+                    ],
+                    "fc32": [
+                        "qubes-snapd-helper"
+                    ],
+                    "centos7": [
+                        "qubes-snapd-helper"
+                    ],
+                    "centos8": [
+                        "qubes-snapd-helper"
+                    ],
+                    "stretch": [
+                        "qubes-snapd-helper"
+                    ],
+                    "buster": [
+                        "qubes-snapd-helper"
+                    ],
+                    "bullseye": [
+                        "qubes-snapd-helper"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": []
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-snapd-helper"
+                    ],
+                    "fc33": [
+                        "qubes-snapd-helper"
+                    ],
+                    "centos7": [
+                        "qubes-snapd-helper"
+                    ],
+                    "centos8": [
+                        "qubes-snapd-helper"
+                    ],
+                    "buster": [
+                        "qubes-snapd-helper"
+                    ],
+                    "bullseye": [
+                        "qubes-snapd-helper"
+                    ]
+                }
             }
         }
     }

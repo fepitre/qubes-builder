@@ -2,10 +2,62 @@
     "python-panflute": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "python-panflute",
+                        "python3-panflute"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "python-panflute",
+                        "python3-panflute"
+                    ],
+                    "fc31": [
+                        "python-panflute",
+                        "python3-panflute"
+                    ],
+                    "fc32": [
+                        "python-panflute",
+                        "python3-panflute"
+                    ],
+                    "centos7": [
+                        "python-panflute",
+                        "python3-panflute"
+                    ],
+                    "centos8": [
+                        "python-panflute",
+                        "python3-panflute"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "python-panflute",
+                        "python3-panflute"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "python-panflute",
+                        "python3-panflute"
+                    ],
+                    "fc33": [
+                        "python-panflute",
+                        "python3-panflute"
+                    ],
+                    "centos7": [
+                        "python-panflute",
+                        "python3-panflute"
+                    ],
+                    "centos8": [
+                        "python-panflute",
+                        "python3-panflute"
+                    ]
+                }
             }
         }
     }

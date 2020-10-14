@@ -2,10 +2,23 @@
     "python-hid": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {
+                    "stretch": [
+                        "python3-hid",
+                        "python-hid"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": []
+                },
+                "vms": {}
             }
         }
     }

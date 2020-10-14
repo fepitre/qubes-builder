@@ -2,10 +2,161 @@
     "core-qubesdb": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-db",
+                        "qubes-db-libs",
+                        "qubes-db-devel",
+                        "python2-qubesdb",
+                        "python3-qubesdb",
+                        "qubes-db-debuginfo",
+                        "qubes-db-debugsource",
+                        "qubes-db-dom0"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-db",
+                        "qubes-db-libs",
+                        "qubes-db-devel",
+                        "python2-qubesdb",
+                        "python3-qubesdb",
+                        "qubes-db-debuginfo",
+                        "qubes-db-debugsource",
+                        "qubes-db-vm"
+                    ],
+                    "fc31": [
+                        "qubes-db",
+                        "qubes-db-libs",
+                        "qubes-db-devel",
+                        "python2-qubesdb",
+                        "python3-qubesdb",
+                        "qubes-db-debuginfo",
+                        "qubes-db-debugsource",
+                        "qubes-db-vm"
+                    ],
+                    "fc32": [
+                        "qubes-db",
+                        "qubes-db-libs",
+                        "qubes-db-devel",
+                        "python2-qubesdb",
+                        "python3-qubesdb",
+                        "qubes-db-debuginfo",
+                        "qubes-db-debugsource",
+                        "qubes-db-vm"
+                    ],
+                    "centos7": [
+                        "qubes-db",
+                        "qubes-db-libs",
+                        "qubes-db-devel",
+                        "python2-qubesdb",
+                        "python3-qubesdb",
+                        "qubes-db-debuginfo",
+                        "qubes-db-debugsource",
+                        "qubes-db-vm"
+                    ],
+                    "centos8": [
+                        "qubes-db",
+                        "qubes-db-libs",
+                        "qubes-db-devel",
+                        "python2-qubesdb",
+                        "python3-qubesdb",
+                        "qubes-db-debuginfo",
+                        "qubes-db-debugsource",
+                        "qubes-db-vm"
+                    ],
+                    "stretch": [
+                        "qubesdb",
+                        "qubesdb-vm",
+                        "libqubesdb",
+                        "qubesdb-dev",
+                        "python-qubesdb",
+                        "python3-qubesdb"
+                    ],
+                    "buster": [
+                        "qubesdb",
+                        "qubesdb-vm",
+                        "libqubesdb",
+                        "qubesdb-dev",
+                        "python-qubesdb",
+                        "python3-qubesdb"
+                    ],
+                    "bullseye": [
+                        "qubesdb",
+                        "qubesdb-vm",
+                        "libqubesdb",
+                        "qubesdb-dev",
+                        "python-qubesdb",
+                        "python3-qubesdb"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-db",
+                        "qubes-db-libs",
+                        "qubes-db-devel",
+                        "python3-qubesdb",
+                        "qubes-db-debuginfo",
+                        "qubes-db-debugsource",
+                        "qubes-db-dom0"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-db",
+                        "qubes-db-libs",
+                        "qubes-db-devel",
+                        "python3-qubesdb",
+                        "qubes-db-debuginfo",
+                        "qubes-db-debugsource",
+                        "qubes-db-vm"
+                    ],
+                    "fc33": [
+                        "qubes-db",
+                        "qubes-db-libs",
+                        "qubes-db-devel",
+                        "python3-qubesdb",
+                        "qubes-db-debuginfo",
+                        "qubes-db-debugsource",
+                        "qubes-db-vm"
+                    ],
+                    "centos7": [
+                        "qubes-db",
+                        "qubes-db-libs",
+                        "qubes-db-devel",
+                        "python3-qubesdb",
+                        "qubes-db-debuginfo",
+                        "qubes-db-debugsource",
+                        "qubes-db-vm"
+                    ],
+                    "centos8": [
+                        "qubes-db",
+                        "qubes-db-libs",
+                        "qubes-db-devel",
+                        "python3-qubesdb",
+                        "qubes-db-debuginfo",
+                        "qubes-db-debugsource",
+                        "qubes-db-vm"
+                    ],
+                    "buster": [
+                        "qubesdb",
+                        "qubesdb-vm",
+                        "libqubesdb",
+                        "qubesdb-dev",
+                        "python3-qubesdb"
+                    ],
+                    "bullseye": [
+                        "qubesdb",
+                        "qubesdb-vm",
+                        "libqubesdb",
+                        "qubesdb-dev",
+                        "python3-qubesdb"
+                    ]
+                }
             }
         }
     }

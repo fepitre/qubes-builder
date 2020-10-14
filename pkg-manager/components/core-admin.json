@@ -2,10 +2,24 @@
     "core-admin": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-core-dom0",
+                        "qubes-core-dom0-debuginfo",
+                        "qubes-core-dom0-debugsource"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-core-dom0"
+                    ]
+                },
+                "vms": {}
             }
         }
     }

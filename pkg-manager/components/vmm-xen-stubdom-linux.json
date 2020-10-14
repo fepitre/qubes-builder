@@ -2,10 +2,22 @@
     "vmm-xen-stubdom-linux": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "xen-hvm-stubdom-linux"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "xen-hvm-stubdom-linux"
+                    ]
+                },
+                "vms": {}
             }
         }
     }

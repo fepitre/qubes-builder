@@ -2,10 +2,32 @@
     "python-xcffib": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {
+                    "stretch": [
+                        "python-xcffib",
+                        "python3-xcffib"
+                    ],
+                    "buster": [
+                        "python-xcffib",
+                        "python3-xcffib"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": []
+                },
+                "vms": {
+                    "buster": [
+                        "python-xcffib",
+                        "python3-xcffib"
+                    ]
+                }
             }
         }
     }

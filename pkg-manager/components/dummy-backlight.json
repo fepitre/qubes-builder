@@ -2,10 +2,48 @@
     "dummy-backlight": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "dummy-backlight",
+                        "dummy-backlight-module",
+                        "dummy-backlight-dom0",
+                        "dummy-backlight-vm"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "dummy-backlight",
+                        "dummy-backlight-module",
+                        "dummy-backlight-dom0",
+                        "dummy-backlight-vm"
+                    ],
+                    "fc33": [
+                        "dummy-backlight",
+                        "dummy-backlight-module",
+                        "dummy-backlight-dom0",
+                        "dummy-backlight-vm"
+                    ],
+                    "centos7": [
+                        "dummy-backlight",
+                        "dummy-backlight-module",
+                        "dummy-backlight-dom0",
+                        "dummy-backlight-vm"
+                    ],
+                    "centos8": [
+                        "dummy-backlight",
+                        "dummy-backlight-module",
+                        "dummy-backlight-dom0",
+                        "dummy-backlight-vm"
+                    ]
+                }
             }
         }
     }

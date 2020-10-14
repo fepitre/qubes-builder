@@ -2,10 +2,98 @@
     "app-linux-split-gpg": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "qubes-gpg-split-dom0"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests",
+                        "qubes-gpg-split-debuginfo",
+                        "qubes-gpg-split-debugsource"
+                    ],
+                    "fc31": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests",
+                        "qubes-gpg-split-debuginfo",
+                        "qubes-gpg-split-debugsource"
+                    ],
+                    "fc32": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests",
+                        "qubes-gpg-split-debuginfo",
+                        "qubes-gpg-split-debugsource"
+                    ],
+                    "centos7": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests",
+                        "qubes-gpg-split-debuginfo",
+                        "qubes-gpg-split-debugsource"
+                    ],
+                    "centos8": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests",
+                        "qubes-gpg-split-debuginfo",
+                        "qubes-gpg-split-debugsource"
+                    ],
+                    "stretch": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests"
+                    ],
+                    "buster": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests"
+                    ],
+                    "bullseye": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-gpg-split-dom0"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests",
+                        "qubes-gpg-split-debuginfo",
+                        "qubes-gpg-split-debugsource"
+                    ],
+                    "fc33": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests",
+                        "qubes-gpg-split-debuginfo",
+                        "qubes-gpg-split-debugsource"
+                    ],
+                    "centos7": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests",
+                        "qubes-gpg-split-debuginfo",
+                        "qubes-gpg-split-debugsource"
+                    ],
+                    "centos8": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests",
+                        "qubes-gpg-split-debuginfo",
+                        "qubes-gpg-split-debugsource"
+                    ],
+                    "buster": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests"
+                    ],
+                    "bullseye": [
+                        "qubes-gpg-split",
+                        "qubes-gpg-split-tests"
+                    ]
+                }
             }
         }
     }

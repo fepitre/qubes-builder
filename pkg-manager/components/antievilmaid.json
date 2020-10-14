@@ -2,10 +2,24 @@
     "antievilmaid": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "anti-evil-maid",
+                        "tpm-extra",
+                        "trousers-changer"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "anti-evil-maid"
+                    ]
+                },
+                "vms": {}
             }
         }
     }

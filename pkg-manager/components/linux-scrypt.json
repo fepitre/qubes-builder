@@ -2,10 +2,73 @@
     "linux-scrypt": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "scrypt",
+                        "scrypt-debuginfo",
+                        "scrypt-debugsource"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "scrypt",
+                        "scrypt-debuginfo",
+                        "scrypt-debugsource"
+                    ],
+                    "fc31": [
+                        "scrypt",
+                        "scrypt-debuginfo",
+                        "scrypt-debugsource"
+                    ],
+                    "fc32": [
+                        "scrypt",
+                        "scrypt-debuginfo",
+                        "scrypt-debugsource"
+                    ],
+                    "centos7": [
+                        "scrypt",
+                        "scrypt-debuginfo",
+                        "scrypt-debugsource"
+                    ],
+                    "centos8": [
+                        "scrypt",
+                        "scrypt-debuginfo",
+                        "scrypt-debugsource"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "scrypt",
+                        "scrypt-debuginfo",
+                        "scrypt-debugsource"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "scrypt",
+                        "scrypt-debuginfo",
+                        "scrypt-debugsource"
+                    ],
+                    "fc33": [
+                        "scrypt",
+                        "scrypt-debuginfo",
+                        "scrypt-debugsource"
+                    ],
+                    "centos7": [
+                        "scrypt",
+                        "scrypt-debuginfo",
+                        "scrypt-debugsource"
+                    ],
+                    "centos8": [
+                        "scrypt",
+                        "scrypt-debuginfo",
+                        "scrypt-debugsource"
+                    ]
+                }
             }
         }
     }

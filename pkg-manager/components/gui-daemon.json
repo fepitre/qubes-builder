@@ -2,10 +2,70 @@
     "gui-daemon": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-gui-dom0",
+                        "qubes-gui-dom0-debuginfo",
+                        "qubes-gui-dom0-debugsource"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-gui-daemon",
+                        "qubes-gui-dom0",
+                        "qubes-audio-daemon",
+                        "qubes-audio-dom0",
+                        "qubes-gui-daemon-debuginfo",
+                        "qubes-gui-daemon-debugsource"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-gui-daemon",
+                        "qubes-gui-dom0",
+                        "qubes-audio-daemon",
+                        "qubes-audio-dom0",
+                        "qubes-gui-daemon-debuginfo",
+                        "qubes-gui-daemon-debugsource"
+                    ],
+                    "fc33": [
+                        "qubes-gui-daemon",
+                        "qubes-gui-dom0",
+                        "qubes-audio-daemon",
+                        "qubes-audio-dom0",
+                        "qubes-gui-daemon-debuginfo",
+                        "qubes-gui-daemon-debugsource"
+                    ],
+                    "centos7": [
+                        "qubes-gui-daemon",
+                        "qubes-gui-dom0",
+                        "qubes-audio-daemon",
+                        "qubes-audio-dom0",
+                        "qubes-gui-daemon-debuginfo",
+                        "qubes-gui-daemon-debugsource"
+                    ],
+                    "centos8": [
+                        "qubes-gui-daemon",
+                        "qubes-gui-dom0",
+                        "qubes-audio-daemon",
+                        "qubes-audio-dom0",
+                        "qubes-gui-daemon-debuginfo",
+                        "qubes-gui-daemon-debugsource"
+                    ],
+                    "buster": [
+                        "qubes-gui-daemon",
+                        "qubes-gui-daemon-pulseaudio"
+                    ],
+                    "bullseye": [
+                        "qubes-gui-daemon",
+                        "qubes-gui-daemon-pulseaudio"
+                    ]
+                }
             }
         }
     }

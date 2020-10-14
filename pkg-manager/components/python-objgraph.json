@@ -2,10 +2,73 @@
     "python-objgraph": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "python-objgraph",
+                        "python3-objgraph",
+                        "python-objgraph-doc"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "python-objgraph",
+                        "python3-objgraph",
+                        "python-objgraph-doc"
+                    ],
+                    "fc31": [
+                        "python-objgraph",
+                        "python3-objgraph",
+                        "python-objgraph-doc"
+                    ],
+                    "fc32": [
+                        "python-objgraph",
+                        "python3-objgraph",
+                        "python-objgraph-doc"
+                    ],
+                    "centos7": [
+                        "python-objgraph",
+                        "python3-objgraph",
+                        "python-objgraph-doc"
+                    ],
+                    "centos8": [
+                        "python-objgraph",
+                        "python3-objgraph",
+                        "python-objgraph-doc"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "python-objgraph",
+                        "python3-objgraph",
+                        "python-objgraph-doc"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "python-objgraph",
+                        "python3-objgraph",
+                        "python-objgraph-doc"
+                    ],
+                    "fc33": [
+                        "python-objgraph",
+                        "python3-objgraph",
+                        "python-objgraph-doc"
+                    ],
+                    "centos7": [
+                        "python-objgraph",
+                        "python3-objgraph",
+                        "python-objgraph-doc"
+                    ],
+                    "centos8": [
+                        "python-objgraph",
+                        "python3-objgraph",
+                        "python-objgraph-doc"
+                    ]
+                }
             }
         }
     }

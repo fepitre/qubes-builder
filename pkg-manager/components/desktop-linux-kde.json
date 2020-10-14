@@ -2,10 +2,55 @@
     "desktop-linux-kde": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "kde-baseapps",
+                        "kde-baseapps-common",
+                        "kde-baseapps-libs",
+                        "kde-baseapps-devel",
+                        "kdepasswd",
+                        "kdialog",
+                        "libkonq",
+                        "kde-baseapps-debuginfo",
+                        "kde-baseapps-debugsource",
+                        "kde-settings",
+                        "kde-settings-minimal",
+                        "kde-settings-plasma",
+                        "kde-settings-pulseaudio",
+                        "qt-settings",
+                        "qubes-kde-dom0",
+                        "plasma-breeze-qubes"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "kde-settings-qubes",
+                        "plasma-breeze-qubes"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "kde-settings-qubes",
+                        "plasma-breeze-qubes"
+                    ],
+                    "fc33": [
+                        "kde-settings-qubes",
+                        "plasma-breeze-qubes"
+                    ],
+                    "centos7": [
+                        "kde-settings-qubes",
+                        "plasma-breeze-qubes"
+                    ],
+                    "centos8": [
+                        "kde-settings-qubes",
+                        "plasma-breeze-qubes"
+                    ]
+                }
             }
         }
     }

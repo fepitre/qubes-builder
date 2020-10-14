@@ -2,10 +2,22 @@
     "intel-microcode": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "microcode_ctl"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "microcode_ctl"
+                    ]
+                },
+                "vms": {}
             }
         }
     }

@@ -2,10 +2,22 @@
     "app-yubikey": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "qubes-yubikey-dom0"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-yubikey-dom0"
+                    ]
+                },
+                "vms": {}
             }
         }
     }

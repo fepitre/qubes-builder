@@ -2,10 +2,22 @@
     "desktop-linux-manager": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-desktop-linux-manager"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-desktop-linux-manager"
+                    ]
+                },
+                "vms": {}
             }
         }
     }

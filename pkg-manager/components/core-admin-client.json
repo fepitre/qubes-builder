@@ -2,10 +2,91 @@
     "core-admin-client": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-core-admin-client",
+                        "python2-qubesadmin",
+                        "python3-qubesadmin"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-core-admin-client",
+                        "python2-qubesadmin",
+                        "python3-qubesadmin"
+                    ],
+                    "fc31": [
+                        "qubes-core-admin-client",
+                        "python2-qubesadmin",
+                        "python3-qubesadmin"
+                    ],
+                    "fc32": [
+                        "qubes-core-admin-client",
+                        "python2-qubesadmin",
+                        "python3-qubesadmin"
+                    ],
+                    "centos7": [
+                        "qubes-core-admin-client",
+                        "python2-qubesadmin",
+                        "python3-qubesadmin"
+                    ],
+                    "centos8": [
+                        "qubes-core-admin-client",
+                        "python2-qubesadmin",
+                        "python3-qubesadmin"
+                    ],
+                    "stretch": [
+                        "qubes-core-admin-client",
+                        "python-qubesadmin",
+                        "python3-qubesadmin"
+                    ],
+                    "buster": [
+                        "qubes-core-admin-client",
+                        "python-qubesadmin",
+                        "python3-qubesadmin"
+                    ],
+                    "bullseye": [
+                        "qubes-core-admin-client",
+                        "python-qubesadmin",
+                        "python3-qubesadmin"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-core-admin-client",
+                        "python3-qubesadmin"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-core-admin-client",
+                        "python3-qubesadmin"
+                    ],
+                    "fc33": [
+                        "qubes-core-admin-client",
+                        "python3-qubesadmin"
+                    ],
+                    "centos7": [
+                        "qubes-core-admin-client",
+                        "python3-qubesadmin"
+                    ],
+                    "centos8": [
+                        "qubes-core-admin-client",
+                        "python3-qubesadmin"
+                    ],
+                    "buster": [
+                        "qubes-core-admin-client",
+                        "python3-qubesadmin"
+                    ],
+                    "bullseye": [
+                        "qubes-core-admin-client",
+                        "python3-qubesadmin"
+                    ]
+                }
             }
         }
     }

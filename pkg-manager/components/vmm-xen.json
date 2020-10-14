@@ -2,10 +2,205 @@
     "vmm-xen": {
         "releases": {
             "4.0": {
-                "branch": "xen-4.8"
+                "branch": "xen-4.8",
+                "dom0": {
+                    "fc25": [
+                        "xen",
+                        "python2-xen",
+                        "python3-xen",
+                        "xen-libs",
+                        "xen-runtime",
+                        "xen-hypervisor",
+                        "xen-doc",
+                        "xen-devel",
+                        "xen-licenses",
+                        "xen-hvm",
+                        "xen-qemu-tools",
+                        "xen-qubes-vm",
+                        "xen-debuginfo",
+                        "xen-debugsource"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "xen",
+                        "python2-xen",
+                        "python3-xen",
+                        "xen-libs",
+                        "xen-runtime",
+                        "xen-hypervisor",
+                        "xen-doc",
+                        "xen-devel",
+                        "xen-licenses",
+                        "xen-hvm",
+                        "xen-qemu-tools",
+                        "xen-qubes-vm",
+                        "xen-debuginfo",
+                        "xen-debugsource"
+                    ],
+                    "fc31": [
+                        "xen",
+                        "python2-xen",
+                        "python3-xen",
+                        "xen-libs",
+                        "xen-runtime",
+                        "xen-hypervisor",
+                        "xen-doc",
+                        "xen-devel",
+                        "xen-licenses",
+                        "xen-hvm",
+                        "xen-qemu-tools",
+                        "xen-qubes-vm",
+                        "xen-debuginfo",
+                        "xen-debugsource"
+                    ],
+                    "fc32": [
+                        "xen",
+                        "python2-xen",
+                        "python3-xen",
+                        "xen-libs",
+                        "xen-runtime",
+                        "xen-hypervisor",
+                        "xen-doc",
+                        "xen-devel",
+                        "xen-licenses",
+                        "xen-hvm",
+                        "xen-qemu-tools",
+                        "xen-qubes-vm",
+                        "xen-debuginfo",
+                        "xen-debugsource"
+                    ],
+                    "centos7": [
+                        "xen",
+                        "python2-xen",
+                        "python3-xen",
+                        "xen-libs",
+                        "xen-runtime",
+                        "xen-hypervisor",
+                        "xen-doc",
+                        "xen-devel",
+                        "xen-licenses",
+                        "xen-hvm",
+                        "xen-qemu-tools",
+                        "xen-qubes-vm",
+                        "xen-debuginfo",
+                        "xen-debugsource"
+                    ],
+                    "centos8": [
+                        "xen",
+                        "python2-xen",
+                        "python3-xen",
+                        "xen-libs",
+                        "xen-runtime",
+                        "xen-hypervisor",
+                        "xen-doc",
+                        "xen-devel",
+                        "xen-licenses",
+                        "xen-hvm",
+                        "xen-qemu-tools",
+                        "xen-qubes-vm",
+                        "xen-debuginfo",
+                        "xen-debugsource"
+                    ],
+                    "stretch": [
+                        "libxen-4.8",
+                        "libxenstore3.0",
+                        "libxen-dev",
+                        "xenstore-utils",
+                        "xen-utils-common"
+                    ],
+                    "buster": [
+                        "libxen-4.8",
+                        "libxenstore3.0",
+                        "libxen-dev",
+                        "xenstore-utils",
+                        "xen-utils-common"
+                    ],
+                    "bullseye": [
+                        "libxen-4.8",
+                        "libxenstore3.0",
+                        "libxen-dev",
+                        "xenstore-utils",
+                        "xen-utils-common"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "xen-4.14"
+                "branch": "xen-4.14",
+                "dom0": {
+                    "fc32": [
+                        "xen",
+                        "python3-xen",
+                        "xen-libs",
+                        "xen-runtime",
+                        "xen-hypervisor",
+                        "xen-doc",
+                        "xen-devel",
+                        "xen-licenses",
+                        "xen-qemu-tools",
+                        "xen-qubes-vm",
+                        "xen-debuginfo",
+                        "xen-debugsource"
+                    ]
+                },
+                "vms": {
+                    "centos8": [
+                        "xen",
+                        "python3-xen",
+                        "xen-libs",
+                        "xen-runtime",
+                        "xen-hypervisor",
+                        "xen-doc",
+                        "xen-devel",
+                        "xen-licenses",
+                        "xen-qemu-tools",
+                        "xen-qubes-vm",
+                        "xen-debuginfo",
+                        "xen-debugsource"
+                    ],
+                    "buster": [
+                        "xenstore-utils",
+                        "xen-utils-common",
+                        "xen-utils-guest",
+                        "xen-hypervisor-common",
+                        "xen-doc",
+                        "xen-utils-4.14",
+                        "xen-hypervisor-4.14-amd64",
+                        "xen-system-amd64",
+                        "libxen-dev",
+                        "libxenmisc4.14",
+                        "libxencall1",
+                        "libxendevicemodel1",
+                        "libxenevtchn1",
+                        "libxenforeignmemory1",
+                        "libxengnttab1",
+                        "libxenstore3.0",
+                        "libxentoolcore1",
+                        "libxentoollog1",
+                        "libxenhypfs1"
+                    ],
+                    "bullseye": [
+                        "xenstore-utils",
+                        "xen-utils-common",
+                        "xen-utils-guest",
+                        "xen-hypervisor-common",
+                        "xen-doc",
+                        "xen-utils-4.14",
+                        "xen-hypervisor-4.14-amd64",
+                        "xen-system-amd64",
+                        "libxen-dev",
+                        "libxenmisc4.14",
+                        "libxencall1",
+                        "libxendevicemodel1",
+                        "libxenevtchn1",
+                        "libxenforeignmemory1",
+                        "libxengnttab1",
+                        "libxenstore3.0",
+                        "libxentoolcore1",
+                        "libxentoollog1",
+                        "libxenhypfs1"
+                    ]
+                }
             }
         }
     }

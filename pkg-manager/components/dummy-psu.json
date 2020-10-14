@@ -2,10 +2,58 @@
     "dummy-psu": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "dummy-psu",
+                        "dummy-psu-module",
+                        "dummy-psu-sender",
+                        "dummy-psu-receiver",
+                        "dummy-psu-debuginfo",
+                        "dummy-psu-debugsource"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "dummy-psu",
+                        "dummy-psu-module",
+                        "dummy-psu-sender",
+                        "dummy-psu-receiver",
+                        "dummy-psu-debuginfo",
+                        "dummy-psu-debugsource"
+                    ],
+                    "fc33": [
+                        "dummy-psu",
+                        "dummy-psu-module",
+                        "dummy-psu-sender",
+                        "dummy-psu-receiver",
+                        "dummy-psu-debuginfo",
+                        "dummy-psu-debugsource"
+                    ],
+                    "centos7": [
+                        "dummy-psu",
+                        "dummy-psu-module",
+                        "dummy-psu-sender",
+                        "dummy-psu-receiver",
+                        "dummy-psu-debuginfo",
+                        "dummy-psu-debugsource"
+                    ],
+                    "centos8": [
+                        "dummy-psu",
+                        "dummy-psu-module",
+                        "dummy-psu-sender",
+                        "dummy-psu-receiver",
+                        "dummy-psu-debuginfo",
+                        "dummy-psu-debugsource"
+                    ]
+                }
             }
         }
     }

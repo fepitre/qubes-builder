@@ -2,10 +2,62 @@
     "app-shutdown-idle": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-app-shutdown-idle"
+                    ],
+                    "fc31": [
+                        "qubes-app-shutdown-idle"
+                    ],
+                    "fc32": [
+                        "qubes-app-shutdown-idle"
+                    ],
+                    "centos7": [
+                        "qubes-app-shutdown-idle"
+                    ],
+                    "centos8": [
+                        "qubes-app-shutdown-idle"
+                    ],
+                    "stretch": [
+                        "qubes-app-shutdown-idle"
+                    ],
+                    "buster": [
+                        "qubes-app-shutdown-idle"
+                    ],
+                    "bullseye": [
+                        "qubes-app-shutdown-idle"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": []
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-app-shutdown-idle"
+                    ],
+                    "fc33": [
+                        "qubes-app-shutdown-idle"
+                    ],
+                    "centos7": [
+                        "qubes-app-shutdown-idle"
+                    ],
+                    "centos8": [
+                        "qubes-app-shutdown-idle"
+                    ],
+                    "buster": [
+                        "qubes-app-shutdown-idle"
+                    ],
+                    "bullseye": [
+                        "qubes-app-shutdown-idle"
+                    ]
+                }
             }
         }
     }

@@ -2,10 +2,41 @@
     "manager": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-manager"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-manager"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-manager"
+                    ],
+                    "fc33": [
+                        "qubes-manager"
+                    ],
+                    "centos7": [
+                        "qubes-manager"
+                    ],
+                    "centos8": [
+                        "qubes-manager"
+                    ],
+                    "buster": [
+                        "qubes-manager"
+                    ],
+                    "bullseye": [
+                        "qubes-manager"
+                    ]
+                }
             }
         }
     }

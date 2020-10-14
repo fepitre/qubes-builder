@@ -3,10 +3,70 @@
         "plugin": 1,
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {
+                    "stretch": [
+                        "qubes-mgmt-salt",
+                        "qubes-mgmt-salt-config",
+                        "qubes-mgmt-salt-dom0",
+                        "qubes-mgmt-salt-vm",
+                        "qubes-mgmt-salt-dom0-formulas",
+                        "qubes-mgmt-salt-vm-formulas",
+                        "qubes-mgmt-salt-vm-connector",
+                        "qubes-mgmt-salt-shared-formulas"
+                    ],
+                    "buster": [
+                        "qubes-mgmt-salt",
+                        "qubes-mgmt-salt-config",
+                        "qubes-mgmt-salt-dom0",
+                        "qubes-mgmt-salt-vm",
+                        "qubes-mgmt-salt-dom0-formulas",
+                        "qubes-mgmt-salt-vm-formulas",
+                        "qubes-mgmt-salt-vm-connector",
+                        "qubes-mgmt-salt-shared-formulas"
+                    ],
+                    "bullseye": [
+                        "qubes-mgmt-salt",
+                        "qubes-mgmt-salt-config",
+                        "qubes-mgmt-salt-dom0",
+                        "qubes-mgmt-salt-vm",
+                        "qubes-mgmt-salt-dom0-formulas",
+                        "qubes-mgmt-salt-vm-formulas",
+                        "qubes-mgmt-salt-vm-connector",
+                        "qubes-mgmt-salt-shared-formulas"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": []
+                },
+                "vms": {
+                    "buster": [
+                        "qubes-mgmt-salt",
+                        "qubes-mgmt-salt-config",
+                        "qubes-mgmt-salt-dom0",
+                        "qubes-mgmt-salt-vm",
+                        "qubes-mgmt-salt-dom0-formulas",
+                        "qubes-mgmt-salt-vm-formulas",
+                        "qubes-mgmt-salt-vm-connector",
+                        "qubes-mgmt-salt-shared-formulas"
+                    ],
+                    "bullseye": [
+                        "qubes-mgmt-salt",
+                        "qubes-mgmt-salt-config",
+                        "qubes-mgmt-salt-dom0",
+                        "qubes-mgmt-salt-vm",
+                        "qubes-mgmt-salt-dom0-formulas",
+                        "qubes-mgmt-salt-vm-formulas",
+                        "qubes-mgmt-salt-vm-connector",
+                        "qubes-mgmt-salt-shared-formulas"
+                    ]
+                }
             }
         }
     }

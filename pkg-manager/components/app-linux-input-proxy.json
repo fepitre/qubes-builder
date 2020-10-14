@@ -2,10 +2,115 @@
     "app-linux-input-proxy": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "qubes-input-proxy",
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver",
+                        "qubes-input-proxy-debuginfo",
+                        "qubes-input-proxy-debugsource"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-input-proxy",
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver",
+                        "qubes-input-proxy-debuginfo",
+                        "qubes-input-proxy-debugsource"
+                    ],
+                    "fc31": [
+                        "qubes-input-proxy",
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver",
+                        "qubes-input-proxy-debuginfo",
+                        "qubes-input-proxy-debugsource"
+                    ],
+                    "fc32": [
+                        "qubes-input-proxy",
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver",
+                        "qubes-input-proxy-debuginfo",
+                        "qubes-input-proxy-debugsource"
+                    ],
+                    "centos7": [
+                        "qubes-input-proxy",
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver",
+                        "qubes-input-proxy-debuginfo",
+                        "qubes-input-proxy-debugsource"
+                    ],
+                    "centos8": [
+                        "qubes-input-proxy",
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver",
+                        "qubes-input-proxy-debuginfo",
+                        "qubes-input-proxy-debugsource"
+                    ],
+                    "stretch": [
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver"
+                    ],
+                    "buster": [
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver"
+                    ],
+                    "bullseye": [
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-input-proxy",
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver",
+                        "qubes-input-proxy-debuginfo",
+                        "qubes-input-proxy-debugsource"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-input-proxy",
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver",
+                        "qubes-input-proxy-debuginfo",
+                        "qubes-input-proxy-debugsource"
+                    ],
+                    "fc33": [
+                        "qubes-input-proxy",
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver",
+                        "qubes-input-proxy-debuginfo",
+                        "qubes-input-proxy-debugsource"
+                    ],
+                    "centos7": [
+                        "qubes-input-proxy",
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver",
+                        "qubes-input-proxy-debuginfo",
+                        "qubes-input-proxy-debugsource"
+                    ],
+                    "centos8": [
+                        "qubes-input-proxy",
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver",
+                        "qubes-input-proxy-debuginfo",
+                        "qubes-input-proxy-debugsource"
+                    ],
+                    "buster": [
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver"
+                    ],
+                    "bullseye": [
+                        "qubes-input-proxy-sender",
+                        "qubes-input-proxy-receiver"
+                    ]
+                }
             }
         }
     }

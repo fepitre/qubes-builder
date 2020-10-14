@@ -2,10 +2,66 @@
     "gui-common": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "qubes-gui-common-devel"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-gui-common-devel"
+                    ],
+                    "fc31": [
+                        "qubes-gui-common-devel"
+                    ],
+                    "fc32": [
+                        "qubes-gui-common-devel"
+                    ],
+                    "centos7": [
+                        "qubes-gui-common-devel"
+                    ],
+                    "centos8": [
+                        "qubes-gui-common-devel"
+                    ],
+                    "stretch": [
+                        "qubes-gui-common"
+                    ],
+                    "buster": [
+                        "qubes-gui-common"
+                    ],
+                    "bullseye": [
+                        "qubes-gui-common"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-gui-common-devel"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-gui-common-devel"
+                    ],
+                    "fc33": [
+                        "qubes-gui-common-devel"
+                    ],
+                    "centos7": [
+                        "qubes-gui-common-devel"
+                    ],
+                    "centos8": [
+                        "qubes-gui-common-devel"
+                    ],
+                    "buster": [
+                        "qubes-gui-common"
+                    ],
+                    "bullseye": [
+                        "qubes-gui-common"
+                    ]
+                }
             }
         }
     }

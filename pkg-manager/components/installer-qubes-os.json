@@ -2,10 +2,44 @@
     "installer-qubes-os": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "pykickstart",
+                        "python-kickstart",
+                        "python3-kickstart",
+                        "python-blivet",
+                        "python3-blivet",
+                        "lorax",
+                        "lorax-lmc-virt",
+                        "lorax-lmc-novirt",
+                        "lorax-templates-generic",
+                        "lorax-templates-qubes",
+                        "pungi",
+                        "pungi-utils",
+                        "anaconda",
+                        "anaconda-core",
+                        "anaconda-gui",
+                        "anaconda-tui",
+                        "anaconda-widgets",
+                        "anaconda-widgets-devel",
+                        "anaconda-dracut",
+                        "anaconda-debuginfo",
+                        "anaconda-debugsource",
+                        "qubes-anaconda-addon",
+                        "qubes-release",
+                        "qubes-release-notes",
+                        "qubes-dom0-dist-upgrade"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": []
+                },
+                "vms": {}
             }
         }
     }

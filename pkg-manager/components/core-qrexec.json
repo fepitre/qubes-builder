@@ -2,10 +2,80 @@
     "core-qrexec": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-core-qrexec",
+                        "qubes-core-qrexec-libs",
+                        "qubes-core-qrexec-devel",
+                        "qubes-core-qrexec-debuginfo",
+                        "qubes-core-qrexec-debugsource",
+                        "qubes-core-qrexec-dom0",
+                        "qubes-core-qrexec-dom0-debuginfo",
+                        "qubes-core-qrexec-dom0-debugsource"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-core-qrexec",
+                        "qubes-core-qrexec-libs",
+                        "qubes-core-qrexec-devel",
+                        "qubes-core-qrexec-debuginfo",
+                        "qubes-core-qrexec-debugsource",
+                        "qubes-core-qrexec-vm",
+                        "qubes-core-qrexec-vm-debuginfo",
+                        "qubes-core-qrexec-vm-debugsource"
+                    ],
+                    "fc33": [
+                        "qubes-core-qrexec",
+                        "qubes-core-qrexec-libs",
+                        "qubes-core-qrexec-devel",
+                        "qubes-core-qrexec-debuginfo",
+                        "qubes-core-qrexec-debugsource",
+                        "qubes-core-qrexec-vm",
+                        "qubes-core-qrexec-vm-debuginfo",
+                        "qubes-core-qrexec-vm-debugsource"
+                    ],
+                    "centos7": [
+                        "qubes-core-qrexec",
+                        "qubes-core-qrexec-libs",
+                        "qubes-core-qrexec-devel",
+                        "qubes-core-qrexec-debuginfo",
+                        "qubes-core-qrexec-debugsource",
+                        "qubes-core-qrexec-vm",
+                        "qubes-core-qrexec-vm-debuginfo",
+                        "qubes-core-qrexec-vm-debugsource"
+                    ],
+                    "centos8": [
+                        "qubes-core-qrexec",
+                        "qubes-core-qrexec-libs",
+                        "qubes-core-qrexec-devel",
+                        "qubes-core-qrexec-debuginfo",
+                        "qubes-core-qrexec-debugsource",
+                        "qubes-core-qrexec-vm",
+                        "qubes-core-qrexec-vm-debuginfo",
+                        "qubes-core-qrexec-vm-debugsource"
+                    ],
+                    "buster": [
+                        "qubes-core-qrexec",
+                        "libqrexec-utils2",
+                        "libqrexec-utils-dev",
+                        "python3-qrexec"
+                    ],
+                    "bullseye": [
+                        "qubes-core-qrexec",
+                        "libqrexec-utils2",
+                        "libqrexec-utils-dev",
+                        "python3-qrexec"
+                    ]
+                }
             }
         }
     }

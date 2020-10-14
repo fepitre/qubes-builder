@@ -2,10 +2,66 @@
     "app-linux-usb-proxy": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "qubes-usb-proxy-dom0"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-usb-proxy"
+                    ],
+                    "fc31": [
+                        "qubes-usb-proxy"
+                    ],
+                    "fc32": [
+                        "qubes-usb-proxy"
+                    ],
+                    "centos7": [
+                        "qubes-usb-proxy"
+                    ],
+                    "centos8": [
+                        "qubes-usb-proxy"
+                    ],
+                    "stretch": [
+                        "qubes-usb-proxy"
+                    ],
+                    "buster": [
+                        "qubes-usb-proxy"
+                    ],
+                    "bullseye": [
+                        "qubes-usb-proxy"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-usb-proxy-dom0"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-usb-proxy"
+                    ],
+                    "fc33": [
+                        "qubes-usb-proxy"
+                    ],
+                    "centos7": [
+                        "qubes-usb-proxy"
+                    ],
+                    "centos8": [
+                        "qubes-usb-proxy"
+                    ],
+                    "buster": [
+                        "qubes-usb-proxy"
+                    ],
+                    "bullseye": [
+                        "qubes-usb-proxy"
+                    ]
+                }
             }
         }
     }

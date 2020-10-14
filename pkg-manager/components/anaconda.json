@@ -2,10 +2,30 @@
     "anaconda": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": []
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "anaconda",
+                        "anaconda-core",
+                        "anaconda-live",
+                        "anaconda-install-env-deps",
+                        "anaconda-gui",
+                        "anaconda-tui",
+                        "anaconda-widgets",
+                        "anaconda-widgets-devel",
+                        "anaconda-dracut",
+                        "anaconda-debuginfo",
+                        "anaconda-debugsource"
+                    ]
+                },
+                "vms": {}
             }
         }
     }

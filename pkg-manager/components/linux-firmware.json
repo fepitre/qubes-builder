@@ -2,10 +2,68 @@
     "linux-firmware": {
         "releases": {
             "4.0": {
-                "branch": "release4.0"
+                "branch": "release4.0",
+                "dom0": {
+                    "fc25": [
+                        "linux-firmware",
+                        "linux-firmware-whence",
+                        "iwl100-firmware",
+                        "iwl105-firmware",
+                        "iwl135-firmware",
+                        "iwl1000-firmware",
+                        "iwl2000-firmware",
+                        "iwl2030-firmware",
+                        "iwl3160-firmware",
+                        "iwl3945-firmware",
+                        "iwl4965-firmware",
+                        "iwl5000-firmware",
+                        "iwl5150-firmware",
+                        "iwl6000-firmware",
+                        "iwl6000g2a-firmware",
+                        "iwl6000g2b-firmware",
+                        "iwl6050-firmware",
+                        "iwl7260-firmware",
+                        "libertas-usb8388-firmware",
+                        "libertas-usb8388-olpc-firmware",
+                        "libertas-sd8686-firmware",
+                        "libertas-sd8787-firmware",
+                        "liquidio-firmware",
+                        "netronome-firmware"
+                    ]
+                },
+                "vms": {}
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "linux-firmware",
+                        "linux-firmware-whence",
+                        "iwl100-firmware",
+                        "iwl105-firmware",
+                        "iwl135-firmware",
+                        "iwl1000-firmware",
+                        "iwl2000-firmware",
+                        "iwl2030-firmware",
+                        "iwl3160-firmware",
+                        "iwl3945-firmware",
+                        "iwl4965-firmware",
+                        "iwl5000-firmware",
+                        "iwl5150-firmware",
+                        "iwl6000-firmware",
+                        "iwl6000g2a-firmware",
+                        "iwl6000g2b-firmware",
+                        "iwl6050-firmware",
+                        "iwl7260-firmware",
+                        "libertas-usb8388-firmware",
+                        "libertas-usb8388-olpc-firmware",
+                        "libertas-sd8686-firmware",
+                        "libertas-sd8787-firmware",
+                        "liquidio-firmware",
+                        "netronome-firmware"
+                    ]
+                },
+                "vms": {}
             }
         }
     }

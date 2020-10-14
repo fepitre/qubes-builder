@@ -2,10 +2,60 @@
     "app-u2f": {
         "releases": {
             "4.0": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc25": [
+                        "qubes-u2f-dom0"
+                    ]
+                },
+                "vms": {
+                    "fc30": [
+                        "qubes-u2f"
+                    ],
+                    "fc31": [
+                        "qubes-u2f"
+                    ],
+                    "fc32": [
+                        "qubes-u2f"
+                    ],
+                    "centos8": [
+                        "qubes-u2f"
+                    ],
+                    "stretch": [
+                        "qubes-u2f"
+                    ],
+                    "buster": [
+                        "qubes-u2f"
+                    ],
+                    "bullseye": [
+                        "qubes-u2f"
+                    ]
+                }
             },
             "4.1": {
-                "branch": "master"
+                "branch": "master",
+                "dom0": {
+                    "fc32": [
+                        "qubes-u2f-dom0"
+                    ]
+                },
+                "vms": {
+                    "fc32": [
+                        "qubes-u2f"
+                    ],
+                    "fc33": [
+                        "qubes-u2f"
+                    ],
+                    "centos8": [
+                        "qubes-u2f"
+                    ],
+                    "buster": [
+                        "qubes-u2f"
+                    ],
+                    "bullseye": [
+                        "qubes-u2f"
+                    ]
+                }
             }
         }
     }
