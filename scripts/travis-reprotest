@@ -48,9 +48,18 @@ if [ "$APT" ]; then
                     test -c /dev/fuse || mknod -m 666 /dev/fuse c 10 229' \
                     --testbed-build-pre 'apt-get -y --no-install-recommends build-dep $control' \
                     "
+        pkgversion="$(basename "$control" | cut -d '+' -f1)"
         # we remove 'domain_host' variation as we execute into a chroot
         # see reprotest manual
         # shellcheck disable=SC2024
-        sudo chroot "$chroot_dir" bash -c -l "reprotest --vary=-domain_host $repro_opts $control" >> travis-reprotest.log 2>&1 || exit 1
+        if sudo chroot "$chroot_dir" bash -c -l "reprotest --vary=-domain_host $repro_opts $control" >> travis-reprotest.log 2>&1; then
+            echo "$pkgversion|YES" >> reprotest-status.log
+        else
+            echo "$pkgversion|NO" >> reprotest-status.log
+            exit_code=1
+        fi
     done
+    { echo; printf "%0.s=" {1..72}; } >> travis-reprotest.log
+    column -t reprotest-status.log -s'|' --table-columns COMPONENT,REPRODUCIBLE >> travis-reprotest.log
+    exit $exit_code
 fi
