@@ -791,7 +791,6 @@ update-repo-templates-community-testing: SNAPSHOT_REPO=templates-community-testi
 update-repo-templates-community: SNAPSHOT_REPO=templates-community-testing
 update-repo-templates-community: MAKE_TARGET=update-repo-from-snapshot
 
-
 # add dependency on each combination of:
 # internal-update-repo-$(TARGET_REPO).$(PACKAGE_SET).$(DIST).$(COMPONENT)
 # use dots for separating "arguments" to not deal with dashes in component names
@@ -812,6 +811,8 @@ update-repo-templates-%: $(addprefix internal-update-repo-templates-%.vm.,$(DIST
 update-repo-template:
 	@true
 
+$(addprefix internal-update-repo-intoto.vm.,$(DISTS_VM_NO_FLAVOR)): internal-update-repo-intoto.vm.% : $(addprefix internal-update-repo-intoto.vm.%., $(COMPONENTS_NO_TPL_BUILDER))
+	@true
 $(addprefix internal-update-repo-current.vm.,$(DISTS_VM_NO_FLAVOR)): internal-update-repo-current.vm.% : $(addprefix internal-update-repo-current.vm.%., $(COMPONENTS_NO_TPL_BUILDER))
 	@true
 $(addprefix internal-update-repo-current-testing.vm.,$(DISTS_VM_NO_FLAVOR)): internal-update-repo-current-testing.vm.% : $(addprefix internal-update-repo-current-testing.vm.%., $(COMPONENTS_NO_TPL_BUILDER))
